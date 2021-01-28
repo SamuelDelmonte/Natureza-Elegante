@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+   <head>
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/menu.css" type="text/css" />
+ <link rel="stylesheet" href="css/estilo-01.css" type="text/css" />
+<link rel="stylesheet" href="css/footer.css" type="text/css" />
+ <link rel="stylesheet" href="css/dinamica.css" type="text/css" />
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+  <title>DINÂMICA</title>
+<style>
+</style>
+   </head>
+
+   <body>
+     <div id="cabecalho">
+     <a href="http://naturezaelegante.com" id="titulo"><h1>ENSINANDO A FÍSICA - SAMUEL DELMONTE</h1></a>
+    <h2>Simulador do Movimento dos Corpos</h2>   
+
+<div id="menu">
+<a href="http://naturezaelegante.com">HOME</a>
+<a href="chat.html" target = "_blank">CONTATO</a>
+<div class="dropdown">
+<a href="#" class="dropbtn">SIMULADOR</a>
+<div class="dropdown-content">
+<a href="viagemtempo01.html">viagens no tempo</a>
+<a href="calculadora-complexa.html">calculadora</a>
+</div>
+</div>
+<div class="dropdown">
+<a href="#" class="dropbtn">ARTIGOS</a>
+<div class="dropdown-content">
+<a href="relatividade01.html">Relatividade 01</a>
+<a href="viagemtempo03.php">Relatividade 02</a>
+<a href="#">Modelo Padrao</a>
+</div>
+</div>
+<a href="portfolio.html" target = "_blank">PORTFOLIO</a>
+<a href="videoaulas.html">VIDEO AULAS</a>
+
+</div>
+     </div>
+<hr/>   
+<br/>  
+<div id = "principal">
+
+
+<section id = "dinamica">
+    
+<h2>DINÂMICA</h2>
+
+<nav>
+<ul>
+<li> As Leis de Newton <br/> <button class="btn1">mais info</button>
+			<button class="btn2">menos info</button> 
+			
+			<div class = "tabela" id ="tabela01">
+<h3 class = "par-03"> A Dinâmica:</h3>
+<p id = "paragrafo"> Na cinemática, estuda-se o movimento dos corpos sem esclarecer sua causa. Na Dinâmica,
+estuda-se a relação entre a força e movimento. </p>
+
+<div id = "dinamica">
+<span id = "span-01">
+<b> Força:</b> <br/>
+É uma interação entre dois corpos.<br/> <br/>
+<b> Força Resultante:</b> <br/>
+É a força que produz o mesmo efeito que todas as outras aplicadas a um corpo.<br/>
+A força resulatante será igual à soma vetorial de todas as outras forças aplicadas num corpo.
+ <br/>
+</span>
+
+<span id = "span-02">
+ <canvas id="myCanvas-09" width="370" height="270" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+</div>
+
+ </h3>
+ <br/>
+<h3 class = "par-03"> As Leis de Newton: </h3>	
+
+<p id = "paragrafo"> As leis de Newton sintetizam os três pilares fundamentais da Mecânica Clássica,
+também conhecida como a Mecânica Newtoniana.
+ </p>
+
+<div id = "dinamica-02">
+<span id = "span-01">
+<b> Primeira Lei de Newton - Princípio da Inércia: </b>
+<br/>
+"Um corpo em repouso tende a permanecer em repouso, e um corpo em movimento tende a permanecer em movimento."
+<br/> <br/>
+<b> Segunda Lei de Newton - Princípio Fundamental da Dinâmica: </b>
+<br/>
+A segunda lei de Newton diz que a força é diretamente proporcional ao produto da aceleração de um corpo 
+pela sua massa, isto é:
+<br/> 
+<b> F = m.a </b>
+<br/>
+Onde,
+<br/>
+<b> F (em N) </b> é a resultante de todas as forças que agem sobre o corpo.
+<br/>
+<b> m (em Kg) </b> é a massa do corpo.
+<br/>
+<b> a (em m/s²) </b> é a aceleração adquirida.
+<br/>
+<br/>
+
+<b> Terceira Lei de Newton - Princípio da Ação e Reação: </b>
+<br/>
+"As forças sempre atuam em pares, para toda força de ação, existe uma força de reação."
+<br/> <br/>
+
+</span>
+
+<span id = "span-03">
+<canvas id="myCanvas-17" width="370" height="350" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+
+</div>
+
+<br/>
+
+<h3 class = "par-03"> Simulador da Segunda Lei de Newton </h3>
+
+<p id = "paragrafo">
+Para determinar o gráfico da aceleração dum corpo.
+</p>
+ 
+<div id = "dinamica-03">
+<span id = "span-01">
+Dada a equação do princípio fundamental da dinâmica: 
+<br/> <br/>
+<b> F = m.a </b>
+<br/>
+<br/>
+        
+		<label>Força:</label>
+		 <br/>
+        <input type="text" id="txtDinforca"/>
+        <br/>
+		<label>Massa:</label>
+		 <br/>
+        <input type="text" id="txtDinmassa"/>
+<br/>
+
+		<button id="btnEnviar" onclick = "gravar()" >Enviar</button>
+  <button id="btnLimpar" onclick = "limpar()" >Limpar</button>
+  
+</span>
+
+<span id = "span-04">
+
+Resultado:
+<div id="divResultado-01">
+ 
+ <p id = "resp-01">
+</p>
+ <div id ="container-01">
+ 
+<div id ="animate-01">
+<p id = "resp-02">
+</p>
+<img src = "imagens/segunda-lei.png"/>
+</div>
+<canvas id="myCanvas-18" width="400" height="300" style="border:1px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+</div>
+
+</span>
+
+</div>
+	
+</div> 
+			
+			</li>
+			
+<li>A Força Peso <br/> <button class="btn3">mais info</button>
+			<button class="btn4">menos info</button> 
+			<div class = "tabela" id ="tabela02">
+			
+<h3 class = "par-03"> A Força Peso. </h3>	
+<p id = "paragrafo">
+O peso dum corpo é a força com que a Terra o atrai, podendo ser variável, quando a gravidade variar,
+isto é, quando não estamos nas proximidades da Terra. </p>
+
+<div id = "peso">
+<span id = "span-01">
+Relacionando o Peso com a Segunda Lei de Newton:
+<br/>
+<b> F = m.a </b>
+<br/>
+temos,
+<br/>
+<b> P = m.g </b>
+<br/>
+onde <b>g</b> é a aceleração da gravidade,<br/>
+e, tem módulo <b>g = 9.8 m/s²</b> na superfície da Terra. 
+<br/>
+<br/>
+Além da força peso, existe outra que normalmente atua na direção vertical,
+chamada <b>Força Normal</b>, que é exercida pela superfície sobre o corpo.
+<br/>
+ 
+</span>
+
+<span id = "span-05">
+<canvas id="myCanvas-19" width="370" height="270" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+
+</div>
+<br/>
+
+<h3 class = "par-03"> Simulador da força Peso </h3>	
+
+<p id = "paragrafo">
+Para determinar o peso dum corpo: 
+</p>
+
+<div id = "peso-02">
+<span id = "span-01">
+Dada a equação da força peso:<br/><br/>
+<b> P = m.g </b>
+<br/><br/>
+
+        <label>Massa (Kg):</label>
+		 <br/>
+        <input type="text" id="txtPesoM"/>
+        <br/>
+		<label>Aceleração da Gravidade (m/s²):</label>
+		 <br/>
+        <input type="text" id="txtPesoG"/>
+		<br/>
+		<button id="btnEnviar-02" onclick = "gravar02()" >Enviar</button>
+  <button id="btnLimpar-02" onclick = "limpar02()" >Limpar</button>
+  
+     
+   
+</span>
+
+<span id = "span-06">
+Resultado:
+<div id="divResultado-02">
+ 
+ <p id = "resp-03">
+   </p>
+  <div id ="container-02">
+  <canvas id="myCanvas-20" width="100" height="70" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<div id ="animate-02"></div>
+</div>
+
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+</div> 
+			
+			</li>
+			
+<li> A Força de Atrito <br/> <button class="btn5">mais info</button>
+			<button class="btn6">menos info</button> 
+			<div class = "tabela" id ="tabela03">
+<h3 class = "par-03"> A Força de Atrito </h3>
+
+<p id = "paragrafo">
+Sempre que aplicamos uma força a um determinado corpo, sobre uma superfície, este terminará parando,
+afinal há força de atrito. 
+</p>
+
+<div id = "atrito">
+<span id = "span-01">
+A <b>Força de Atrito</b> é caracterizada por:
+<br/>
+- Opor-se ao movimento; 
+<br/>
+- Depender da natureza e rugosidade da superfície; 
+<br/> 
+- Ser proporcional à força normal de cada corpo.
+<br/>
+<br/>
+Ela é caracterizada pela seguinte razão:
+<br/>
+<b> Fat = u.N </b>
+<br/>
+onde,
+<br/>
+u: Coeficiente de atrito (adimensional);
+<br/>
+N: Força Normal (N).
+<br/>
+<br/>
+Há dois tipos de Atrito:
+<br/>
+<b> Atrito Estático: </b>
+<br/>
+- Atua quando não há deslizamento dos corpos;
+<br/>
+A força de atrito estático máxima é igual à força mínima necessária para iniciar o movimento dum corpo.
+<br/>
+<b> Atrito Dinâmico: </b>
+<br/>
+- Atua quando há deslizamento dos corpos;
+<br/>
+Quando a força de atrito estático for ultrapassada pela força aplicada ao corpo, este entrará em movimento.
+</span>
+
+<span id = "span-08">
+ <canvas id="myCanvas-21" width="370" height="350" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</span>
+
+</div>
+<br/>
+	
+<h3 class = "par-03"> Simulador da Força de Atrito </h3>	
+<p id = "paragrafo">
+Para determinar o gráfico da força de atrito dum corpo:
+</p>
+<div id = "atrito-02">
+<span id = "span-01">
+Sendo,
+<br/>
+<br/>
+<b> g = 9.8 m/s² </b>, e: 
+<br/>
+<br/>
+O coefic. de atrito <b>u </b>compreendido (0 < u < 1).  
+<br/>
+<br/>
+<label>Força (N):</label>
+		 <br/>
+        <input type="text" id="txtAtritoF"/>
+        <br/>
+		<label>Massa (kg):</label>
+		 <br/>
+        <input type="text" id="txtAtritoM"/>
+		<br/>
+		<label>u (Coef. de Atrito):</label>
+		 <br/>
+        <input type="text" id="txtAtritoU"/>
+		<br/>
+		
+		<button id="btnEnviar-03" onclick = "gravar03()" >Enviar</button>
+  <button id="btnLimpar-03" onclick = "limpar03()" >Limpar</button>
+  
+<br/>
+</span>
+
+<span id = "span-09">
+
+Resultado:
+<div id="divResultado-03">
+ 
+ <p id = "resp-04">
+</p>
+ <div id ="container-03">
+ 
+<div id ="animate-03">
+
+<p id = "resp-05">
+</p>
+<img src = "imagens/segunda-lei.png"/>
+
+</div>
+<canvas id="myCanvas-22" width="400" height="270" style="border:1px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+</div>
+
+</span>
+
+</div>
+
+<br/>
+
+</div> 
+			
+			</li>
+			
+<li> A Força Elástica <br/> <button class="btn7">mais info</button>
+			<button class="btn8">menos info</button>
+
+<div class = "tabela" id ="tabela04">
+<h3 class = "par-03"> A Força Elástica </h3>	
+
+<p id = "paragrafo">
+Robert Hooke, ao estudar as deformações de molas, verificou que a deformação da mola aumenta na proporção
+direta à força, a ela aplicada. 
+</p>
+
+<div id = "mola">
+<span id = "span-28">
+A Lei de Hooke,
+<br/><br/>
+<b> F = k.x </b>
+<br/>
+onde;
+<br/>
+<br/>
+<b> F: </b> Intensidade da força aplicada (N);
+<br/>
+<b> K:</b> Constante elástica da mola (N/m);
+<br/>
+ <b> x: </b> Deformação da mola (m).
+<br/>
+</span>
+
+<span id = "span-13">
+<canvas id="myCanvas-12" width="400" height="240" style="border:1px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</span>
+
+</div>
+
+<br/>
+
+ <h3 class = "par-03"> Simulador da força elástica </h3>	
+
+<p id = "paragrafo">
+Para determinar o gráfico da deformação da mola (x):</p>
+<div id = "mola-02">
+<span id = "span-01" class = "muv-04">
+Dada a equação da Lei de Hooke:
+<br/><br/>
+<b> F = k.x </b>
+<br/>
+<br/>
+Determinar a deformação x da mola:
+<br/>
+<br/>
+Dado que g = 9.8 m/s².
+<br/>
+<br/>
+
+<label> Força aplicada (N):</label>
+		 <br/>
+        <input type="text" id="txtMolaF"/>
+        <br/>
+		 <label>Constante Elástica (N/m):</label>
+		 <br/>
+        <input type="text" id="txtMolaC"/>
+        
+		
+		 <br/>
+		<button id="btnEnviar-05" onclick = "gravar10()" >Enviar</button>
+  <button id="btnLimpar-05" onclick = "limpar10()" >Limpar</button>
+</span>
+
+<span id = "span-16">
+
+ Resultado:
+<div id="divResultado-10">
+ 
+ <p id = "resp-10">
+   </p>
+  <div id ="container">
+  <canvas id="myCanvas-05" width="320" height="240" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</div>
+
+	</div>
+	
+</span>
+
+</div>
+
+<br/>
+
+</div> 			
+			
+			</li>
+			
+<li> O Plano Inclinado <br/> <button class="btn9">mais info</button>
+			<button class="btn10">menos info</button>
+<div class = "tabela" id ="tabela05">
+
+<h3 class = "par-03"> O plano inclinado</h3>	
+
+<p id = "paragrafo">
+O plano imclinado ocorre quando um  objeto se desloca através dum plano que possui angulação em relação à superficie horizontal 
+a partir do solo, formando um determinado ângulo 
+em relação à horizontal.
+</p>
+
+
+<div id = "planoInclinado">
+<span id = "span-01">
+
+Ao considerarmos um plano inclinado sobre determinado angulo em relação à horizontal, e um objeto
+colocado sob sua superfície, ele (o corpo) sofre a ação de duas forças, uma vez que a componente de atrito é
+deprezada:
+<br/><br/>
+<canvas id="myCanvas-23" width="350" height="310" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+
+</span>
+
+<span id = "span-17">
+
+Para realizar os cálculos, é necessário estabelecer algumas relações. Portanto decomporemos a força Peso e a 
+Normal nas suas componentes do eixo x e y, e relacionaremos com o angulo de inclinação do plano inclinado.
+Nesse exemplo haverá Atrito.  
+  <br/><br/>
+
+<canvas id="myCanvas-24" width="370" height="320" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</span>
+
+</div>
+
+<br/>
+
+<h3 class = "par-03"> Simulador do Plano Inclinado. </h3>
+
+<p id = "paragrafo">
+Para determinar o gráfico do plano inclinado:
+</p>
+	
+	<div id = "planoInclinado-02">
+<span id = "span-19">
+
+Dada a equação da resultante das forças no eixo x:
+<br/><br/>
+<b> Rx = m.a = m.g(sen(B) - cos(B).u) </b>
+<br/>
+<br/>
+Dado que um corpo de massa m, que se encontra na superfície do plano, e desliza com Atrito no sentido 
+de cima para baixo. 
+<br/>
+Determinar a força resultante (Rx), a aceleração (a) e a intensidade do Atrito (Fat) do sistema:
+<br/>
+<br/>
+Dado que g = 9.8 m/s².
+<br/>
+<br/>
+
+<label> Coeficiente de Atrito (u) (0 < u < 1):</label>
+		 <br/>
+        <input type="text" id="txtPlanoCoeficiente"/>
+        <br/>
+		 <label> Angulo de inclinação (B) (0 < B < 90 graus):</label>
+		 <br/>
+        <input type="text" id="txtPlanoAngulo"/>
+        		 <br/>
+             <label> Massa do corpo (m) (0 < B < 100 Kg):</label>
+		 <br/>
+        <input type="text" id="txtPlanoMassa"/>
+		
+		 <br/>
+		<button id="btnEnviar-06" onclick = "gravar11()" >Enviar</button>
+  <button id="btnLimpar-06" onclick = "limpar11()" >Limpar</button>
+
+</span>
+
+<span id = "span-20">
+
+Resultado:
+<div id="divResultado-11">
+ 
+ <p id = "resp-11">
+   </p>
+  <div id ="container-05">
+
+
+<div id ="animate"></div>
+
+<canvas id="myCanvas-25" width="350" height="300" style="">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</div>
+
+	</div>
+
+</span>
+
+</div>
+
+<br/>
+
+<br/>
+
+</div> 			
+			
+			</li>
+			
+			<li>Os Sistemas <br/> <button class="btn11">mais info</button>
+			<button class="btn12">menos info</button>
+
+<div class = "tabela" id ="tabela06">
+<h3 class = "par-03"> Corpos em contato. </h3>	
+
+<p id = "paragrafo">
+Após elucidar os princípios da dinâmica, tais como, a força peso, elástica, o atrito e o plano inclinado,
+calcularemos, agora, a combinação dessas forças.
+Para tanto, utilizaremos a terceira lei de Newton ("par ação-reação"), para calcular a interação entre 
+dois ou mais corpos.
+</p>
+
+<div id = "sistemas">
+<span id = "span-01">
+  <canvas id="myCanvas-26" width="400" height="450" style="border:2px solid red;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+
+<span id = "span-29">
+
+  <canvas id="myCanvas-27" width="400" height="450" style="border:2px solid red;">
+    Your browser does not support the HTML5 canvas tag.</canvas> 
+
+
+</span>
+
+</div>
+
+<br/>
+
+<h3 class = "par-03"> Simulador de Sistemas. </h3>	
+
+    <p id = "paragrafo">
+    Para determinar o gráfico de sistemas.
+    </p>
+
+<div id = "sistemas-02">
+
+    <span id = "span-31">
+
+        <canvas id="myCanvas-28" width="400" height="250" style="border:2px solid red;">
+            Your browser does not support the HTML5 canvas tag.</canvas> 
+     <br/>
+        Dado o sistema acima e a equação da resultante das forças:
+        <br/>
+        <b> R = P2 - T = m2.g - T = [a.(M1 + M2) - T] </b>
+        <br/>
+        <br/>
+      Determinar a força resultante (R), a aceleração (a) e a intensidade da tensão (T) do sistema:
+        <br/>
+        Dado que g = 9.8 m/s².
+        <br/>
+        <br/>
+        
+                     <label> Massa do corpo 01 (m) (0 <= B < 100 Kg):</label>        
+             <br/>
+                <input type="text" id="txtSistemasM1"/>
+                     <br/>
+                     <label> Massa do corpo 02 (m) (0 <= B < 100 Kg):</label>
+             <br/>
+                <input type="text" id="txtSistemasM2"/>
+            
+             <br/>
+            <button id="btnEnviar-08" onclick = "gravar12()" >Enviar</button>
+          <button id="btnLimpar-08" onclick = "limpar12()" >Limpar</button>
+
+    </span>
+    
+    <span id = "span-30">
+    
+        Resultado:
+        <div id="divResultado-12">
+         
+         <p id = "resp-12">
+           </p>
+          <div id ="container-06">
+        
+        
+        <div id ="animate-04"></div>
+        <div id ="animate-05"></div>
+
+        <canvas id="myCanvas-29" width="350" height="300">
+            Your browser does not support the HTML5 canvas tag.</canvas> 
+        
+        
+        </div>
+        
+          </div>
+    
+    
+    </span>
+    
+    </div>
+    <br/>
+
+</div> 			
+</li>
+
+</ul>
+</nav>
+   
+</section>
+ </div>
+ 
+ <hr id = "rodape" />
+ 
+ <footer>
+<h1 id = "rodape"> Samuel Delmonte</h1>
+
+ </footer>
+
+				
+				
+				 <script src="js/dinamica.js"></script>
+ </body>
+ </html>
+ 
+ 
