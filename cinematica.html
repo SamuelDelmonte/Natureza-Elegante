@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+   <head>
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/menu.css" type="text/css" />
+ <link rel="stylesheet" href="css/estilo-01.css" type="text/css" />
+<link rel="stylesheet" href="css/footer.css" type="text/css" />
+ <link rel="stylesheet" href="css/cinematica.css" type="text/css" />
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+  <title>CINEMÁTICA</title>
+<style>
+</style>
+   </head>
+
+   <body>
+     <div id="cabecalho">
+     <a href="http://naturezaelegante.com" id="titulo"><h1>ENSINANDO A FÍSICA - SAMUEL DELMONTE</h1></a>
+    <h2>Simulador do Movimento dos Corpos</h2>   
+
+<div id="menu">
+<a href="http://naturezaelegante.com">HOME</a>
+<a href="contato.html" >CONTATO</a>
+<div class="dropdown">
+<a href="#" class="dropbtn">SIMULADOR</a>
+<div class="dropdown-content">
+<a href="viagemtempo01.html">viagens no tempo</a>
+<a href="calculadora-complexa.html">calculadora</a>
+</div>
+</div>
+<div class="dropdown">
+<a href="#" class="dropbtn">ARTIGOS</a>
+<div class="dropdown-content">
+<a href="relatividade01.html">Relatividade 01</a>
+<a href="viagemtempo03.php">Relatividade 02</a>
+<a href="#">Modelo Padrao</a>
+</div>
+</div>
+<a href="portfolio.html" target = "_blank">PORTFOLIO</a>
+<a href="videoaulas.html">VIDEO AULAS</a>
+
+</div>
+     </div>
+<hr/>   
+<br/>  
+<div id = "principal">
+
+
+<section id = "cinematica">
+    
+<h2>CINEMÁTICA</h2>
+
+<nav>
+<ul>
+<li> A velocidade <br/> <button class="btn1">mais info</button>
+			<button class="btn2">menos info</button> 
+			
+			<div class = "tabela" id ="tabela01">
+<h3 class = "par-03"> A equação horária do movimento:</h3>
+<p class = "paragrafo"> A velocidade de um corpo é dada pela relação entre o deslocamento de um corpo em determinado tempo. 
+Pode ser considerada a grandeza que mede o quão rápido um corpo se desloca. </p>
+
+<div id = "equacaoHoraria">
+<span class = "span-01">
+<b> S(t) = So + Vt </b> <br/>
+onde,<br/> <br/>
+S = espaço final percorrido;<br/>
+So = espaço inicial, com t = 0;<br/>
+V = velocidade média do deslocamento;<br/>
+t = tempo decorrido do deslocamento.
+</span>
+
+<span id = "span-02">
+ <canvas id="myCanvas-09" width="370" height="270" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+</div>
+
+
+ <br/>
+<h3 class = "par-03"> A velocidade escalar média </h3>	
+
+<p class = "paragrafo"> Indica o quão rápido um objeto se desloca em um intervalo de tempo médio
+e é dada pela seguinte razão: </p>
+
+<div id = "velocidadeMedia">
+<span class = "span-01">
+<b> Vmedia = (S final - S inicial) / (t final - t inicial) </b>
+<br/>
+onde,<br/> <br/>
+S final = espaço final percorrido;<br/>
+S inicial = espaço inicial, com t = 0;<br/>
+Vmedia = velocidade média do deslocamento;<br/>
+t final = tempo final do deslocamento.<br>
+t inicial = tempo inicial do deslocamento.<br/>
+portanto,<br/> <br/>
+<b> Vm = ∆S / ∆t → tg(ᵩ) = cateto op / cateto ad. </b>
+</span>
+
+<span id = "span-03">
+
+</span>
+
+</div>
+
+<br/>
+
+<h3 class = "par-03"> A velocidade escalar instantânea </h3>
+
+<p class = "paragrafo">
+A velocidade instantânea de um móvel será encontrada quando se considerar um intervalo de tempo 
+(∆t) infinitamente pequeno, ou seja, quando o intervalo de tempo tender a zero (∆t → 0).
+</p>
+ 
+<div id = "velocidadeInstantanea">
+<span class = "span-01">
+Como, <br/> <br/>
+Vm = ∆S / ∆t → tg(ᵩ) = cateto op / cateto ad. <br/>
+e, se, a variação de tempo tender a zero, <br/> <br/>
+∆t → 0; <br/>
+definimos a velocidade instantânea: <br/> <br/>
+ <b> V = lim ∆S / ∆t </b> <br/>
+<b> ∆t → 0 </b>
+
+</span>
+
+<span id = "span-04">
+
+</span>
+
+</div>
+	
+</div> 
+			
+			</li>
+			
+<li>O movimento uniforme <br/> <button class="btn3">mais info</button>
+			<button class="btn4">menos info</button> 
+			<div class = "tabela" id ="tabela02">
+			
+<h3 class = "par-03"> O movimento retilíneo e uniforme (MRU). </h3>	
+<p class = "paragrafo">
+Quando um móvel se desloca com uma velocidade constante, diz-se que este móvel está em um movimento uniforme (MU). 
+Particularmente, no caso em que ele se desloca com uma velocidade constante em trajetória reta, 
+tem-se um movimento retilíneo uniforme. </p>
+
+<div id = "movimentoUniforme">
+<span class = "span-01">
+Dada a equação horária do espaço:<br/><br/>
+S(t) = So + Vt<br/>
+onde,<br/> <br/>
+<b> Vm = ∆S / ∆t → tg(ᵩ) = cateto op / cateto ad. </b>
+<br/>
+Isolando as variáveis, teremos: <br/><br/>
+S - So = Vt; <br/>
+Vm = ∆S / ∆t; <br/>
+∆t = ∆S / Vm = tf - ti = S - So / Vm;
+</span>
+
+<span id = "span-05">
+
+</span>
+
+</div>
+<br/>
+
+<h3 class = "par-03"> Simulador do movimento uniforme </h3>	
+
+<p class = "paragrafo">
+Para determinar o espaço final percorrido: 
+</p>
+
+<div id = "movimentoUniforme-02">
+<span class = "span-01">
+Dada a equação horária do espaço:<br/><br/>
+S(t) = So + Vt<br/><br/>
+
+        <label>Espaço Inicial:</label>
+		 <br/>
+        <input type="text" id="txtSo"/>
+        <br/>
+		<label>Velocidade:</label>
+		 <br/>
+        <input type="text" id="txtVelocidade"/>
+<br/>
+		<label>Tempo:</label>
+		 <br/>
+        <input type="text" id="txtTempo"/>
+		<br/>
+		<button id="btnEnviar" onclick = "gravar()" >Enviar</button>
+  <button id="btnLimpar" onclick = "limpar()" >Limpar</button>
+  
+     
+   
+</span>
+
+<span id = "span-06">
+Resultado:
+ <div id="divResultado">
+ <p id = "resp">
+  </p>
+   </div>
+	
+</span>
+
+</div>
+<br/>
+
+<p class = "paragrafo">
+Para determinar a velocidade média do percurso: 
+</p>
+
+<div id = "movimentoUniforme-02">
+<span class = "span-01">
+Dada a equação da velocidade média:<br/><br/>
+Vm = ∆S / ∆t<br/><br/>
+
+        <label>Variação de espaço:</label>
+		 <br/>
+        <input type="text" id="txtVariacaoS"/>
+        <br/>
+		<label>Variação de tempo:</label>
+		<br/>
+		<input type="text" id="txtVariacaoT"/>
+        <br/>
+		<button id="btnEnviar" onclick = "gravar02()" >Enviar</button>
+  <button id="btnLimpar" onclick = "limpar02()" >Limpar</button>
+  
+     
+   
+</span>
+
+<span id = "span-06">
+Resultado:
+ <div id="divResultado-02">
+   <p id = "resp-02"></p>
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+<p class = "paragrafo">
+Para determinar o gráfico da função horária do espaço: 
+</p>
+
+<div id = "movimentoUniforme-03">
+<span class = "span-01">
+Dada a equação horária do espaço:
+<br/><br/>
+S(t) = So + Vt
+<br/><br/>
+
+        <label>Espaço inicial (So):</label>
+		 <br/>
+        <input type="text" id="txtSinicial"/>
+        <br/>
+		<label>Velocidade:</label>
+		<br/>
+		<input type="text" id="txtVel"/>
+        <br/>
+		<label>Tempo:</label>
+		<br/>
+		<input type="text" id="txtTemp"/>
+        <br/>
+		<button id="btnEnviar-02" onclick = "gravar03()" >Enviar</button>
+  <button id="btnLimpar-02" onclick = "limpar03()" >Limpar</button>
+  
+     
+   
+</span>
+
+<span id = "span-07">
+Resultado:
+
+ <div id="divResultado-03">
+ 
+ <p id = "resp-03">
+   </p>
+  <canvas id="myCanvas" width="370" height="170" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+	</div>
+	
+</span>
+
+</div>
+</div> 
+			
+			</li>
+			
+<li>O movimento uniformemente variado <br/> <button class="btn5">mais info</button>
+			<button class="btn6">menos info</button> 
+			<div class = "tabela" id ="tabela03">
+<h3 class = "par-03"> O movimento uniformemente variado </h3>
+
+<p class = "paragrafo">
+Também conhecido como movimento acelerado, consiste em um movimento onde há variação de velocidade,
+ou seja, o móvel sofre aceleração à medida que o tempo passa. 
+</p>
+
+<div id = "movimentoUniformementeVariado">
+<span class = "span-01">
+<span id = "aceleracao"> A aceleração: </span>
+<br/>
+Assim como para a velocidade, podemos definir uma aceleração média se considerarmos a variação 
+de velocidade ∆V em um intervalo de tempo ∆t, e esta média será dada pela razão:<br/><br/>
+<b> A média =  ∆V /  ∆t </b> <br/>
+onde,<br/> <br/>
+velocidade / tempo → m / s / s → m / s²
+</span>
+
+<span id = "span-08">
+
+<span id = "aceleracao"> A função horária da velocidade: </span>
+<br/>
+Se considerarmos to = 0, teremos a função horária da velocidade do Movimento Uniformemente Variado,
+que descreve a velocidade em função do tempo [v=f(t)]:<br/><br/>
+A média =  ∆V /  ∆t 
+<br/>
+onde,<br/>
+∆V = A.∆t → V - Vo = A.∆t, e to = 0, logo: 
+<br/>
+<br/>
+<b> V(t) = Vo + A.t </b> 
+
+</span>
+
+</div>
+<br/>
+	
+<h3 class = "par-03"> A posição em função do tempo [S = f(t)] </h3>	
+<p class = "paragrafo">
+A melhor forma de demonstrar esta função é através do diagrama 
+velocidade versus tempo (v x t) no movimento uniformemente variado.
+</p>
+<div id = "movimentoUniformementeVariado">
+<span class = "span-01">
+O deslocamento será dado pela área sob a reta da velocidade, ou seja, a área do trapézio.
+<br/>
+<br/>
+∆S = (V + Vo).t / 2 
+<br/>onde,
+<br/> 
+V(t) = Vo + A.t 
+<br/>portanto,
+<br/>
+∆S = (Vo + A.t + Vo).t / 2 → (2Vo.t)/2 + (A. t²)/ 2   
+<br/>
+ ∆S = Vo.t + (A. t²)/ 2 ;  ∆S = S - So; 
+<br/>logo:
+<br/> 
+<br/>
+<b> S(t) = So + Vo.t + (A. t²)/ 2</b> 
+<br/>
+</span>
+
+<span id = "span-09">
+
+</span>
+
+</div>
+<br/>
+
+<h3 class = "par-03"> Simulador do movimento uniformemente variado </h3>	
+
+<p class = "paragrafo">
+Para determinar a aceleração média do percurso: 
+</p>
+
+<div id = "movimentoUniformementeVariado">
+<span class = "span-01">
+Dada a equação da aceleração média:<br/><br/>
+Am = ∆V / ∆t<br/><br/>
+
+        <label>Variação de velocidade:</label>
+		 <br/>
+        <input type="text" id="txtMruvV"/>
+        <br/>
+		<label>Variação de tempo:</label>
+		<br/>
+		<input type="text" id="txtMruvT"/>
+        <br/>
+		<button id="btnEnviar" onclick = "gravar04()" >Enviar</button>
+  <button id="btnLimpar" onclick = "limpar04()" >Limpar</button>
+  
+     
+   
+</span>
+
+<span id = "span-10">
+Resultado:
+ <div id="divResultado-04">
+   <p id = "resp-04"></p>
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+<p class = "paragrafo">
+Para determinar a velocidade final do percurso: 
+</p>
+
+<div id = "movimentoUniformementeVariado">
+<span class = "span-01">
+Dada a equação horária da velocidade:<br/><br/>
+V(t) = Vo + A.t <br/><br/>
+
+        <label>velocidade inicial:</label>
+		 <br/>
+        <input type="text" id="txtMruvVinicial"/>
+        <br/>
+		<label>tempo:</label>
+		<br/>
+		<input type="text" id="txtMruvTfinal"/>
+        <br/>
+		<label>aceleração:</label>
+		<br/>
+		<input type="text" id="txtMruvA"/>
+        <br/>
+		<button id="btnEnviar" onclick = "gravar05()" >Enviar</button>
+  <button id="btnLimpar" onclick = "limpar05()" >Limpar</button>
+  
+     
+   
+</span>
+
+<span id = "span-10">
+Resultado:
+ <div id="divResultado-05">
+   <p id = "resp-05"></p>
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+<p class = "paragrafo">
+Para determinar o gráfico da função horária da velocidade: 
+</p>
+
+<div id = "movimentoUniformementeVariado">
+<span class = "span-01">
+Dada a equação horária da velocidade:
+<br/><br/>
+V(t) = Vo + At
+<br/><br/>
+
+        <label>Velocidade inicial (Vo):</label>
+		 <br/>
+        <input type="text" id="txtMruvVo-02"/>
+        <br/>
+		<label>Aceleração:</label>
+		<br/>
+		<input type="text" id="txtMruvA-02"/>
+        <br/>
+		<label>Tempo:</label>
+		<br/>
+		<input type="text" id="txtMruvT-02"/>
+        <br/>
+		<button id="btnEnviar-03" onclick = "gravar06()" >Enviar</button>
+  <button id="btnLimpar-03" onclick = "limpar06()" >Limpar</button>
+  
+     
+   
+</span>
+
+<span id = "span-11">
+Resultado:
+
+ <div id="divResultado-06">
+ 
+ <p id = "resp-06">
+   </p>
+  <canvas id="myCanvas-02" width="370" height="170" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+
+<p class = "paragrafo">
+Para determinar o gráfico da função horária do espaço: 
+</p>
+
+<div id = "movimentoUniformementeVariado-02">
+<span class = "span-01">
+Dada a equação horária do espaço:
+<br/><br/>
+S(t) = So + Vot + (A.t²/2)
+<br/><br/>
+
+        <label>Espaço inicial (So):</label>
+		 <br/>
+        <input type="text" id="txtMruvSo-03"/>
+        <br/>
+		 <label>Velocidade inicial (Vo):</label>
+		 <br/>
+        <input type="text" id="txtMruvVo-03"/>
+        <br/>
+		<label>Aceleração:</label>
+		<br/>
+		<input type="text" id="txtMruvA-03"/>
+        <br/>
+		<label>Tempo:</label>
+		<br/>
+		<input type="text" id="txtMruvT-03"/>
+        <br/>
+		<button id="btnEnviar-04" onclick = "gravar07()" >Enviar</button>
+  <button id="btnLimpar-04" onclick = "limpar07()" >Limpar</button>
+  
+     
+   
+</span>
+
+<span id = "span-12">
+Resultado:
+
+ <div id="divResultado-07">
+ 
+ <p id = "resp-07">
+   </p>
+  <canvas id="myCanvas-03" width="370" height="200" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+</div> 
+			
+			</li>
+			
+<li>O movimento vertical <br/> <button class="btn7">mais info</button>
+			<button class="btn8">menos info</button>
+
+<div class = "tabela" id ="tabela04">
+<h3 class = "par-03">Lançamento vertical </h3>	
+
+<p class = "paragrafo">
+Um arremesso de um corpo, com velocidade inicial na direção vertical, recebe o nome de Lançamento Vertical.
+Sua trajetória é retilínea e vertical, e, devido à gravidade, 
+o movimento classifica-se com Uniformemente Variado. 
+</p>
+
+<div id = "movimentoUniformementeVariado-03">
+<span id = "span-28">
+As funções que regem o lançamento vertical são as mesmas do movimento uniformemente variado,
+revistas com o referencial vertical (h), onde antes era horizontal (S) e com aceleração da gravidade (g).
+<br/><br/>
+<b> V(t) = Vo + gt </b>
+<br/>
+<b> h(t) = ho + Vot + gt²/2 </b>
+<br/>
+<b> V² = Vo² + 2g∆h</b>
+<br/>
+onde, a aceleração da gravidade é:
+<br/>
+ <b> g = 9,8 m/s². </b>
+<br/>
+Sendo que g é positivo ou negativo, dependendo da direção do movimento.
+</span>
+
+<span id = "span-13">
+<div id = "span-13-esquerda">
+<canvas id="myCanvas-12" width="180" height="240" style="border:1px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+<div id = "span-13-direita">
+<p> y = yo + Voy.t + a.t²/2 </p>
+<p> V(t) = Voy + a.t</p>
+<p> V² = Voy² + 2.a.y </p>
+<p> a = g (eixo orientado para baixo).</p>
+<p> a = -g (eixo orientado para cima).</p>
+</div>
+</span>
+
+</div>
+
+<br/>
+
+<h3 class = "par-03"> Simulador do movimento vertical </h3>	
+
+<p class = "paragrafo">
+Para determinar o gráfico do lançamento vertical para baixo:</p>
+<div id = "movimentoUniformementeVariado-04">
+<span class = "span-01" class = "muv-04">
+Dada a equação da função horária da velocidade:
+<br/><br/>
+V(t) = Vo + gt
+<br/>
+<br/>
+
+<label> velocidade inicial (Vo):</label>
+		 <br/>
+        <input type="text" id="txtMruvVo-06"/>
+        <br/>
+		 <label>Tempo:</label>
+		 <br/>
+        <input type="text" id="txtMruvT-06"/>
+        <br/>
+		<label>Aceleração da gravidade (g):</label>
+		<br/>
+		<input type="text" id="txtMruvG-06"/>
+		
+		 <br/>
+		<button id="btnEnviar-05" onclick = "gravar10()" >Enviar</button>
+  <button id="btnLimpar-05" onclick = "limpar10()" >Limpar</button>
+</span>
+
+<span id = "span-16">
+Resultado:
+<div id="divResultado-10">
+ 
+ <p id = "resp-10">
+   </p>
+  <div id ="container">
+  <canvas id="myCanvas-05" width="100" height="70" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<div id ="animate"></div>
+</div>
+
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+<p class = "paragrafo">
+Para determinar o gráfico do lançamento vertical para cima:</p>
+<div id = "movimentoUniformementeVariado-04">
+<span class = "span-01">
+Dada a equação da função horária da velocidade:
+<br/><br/>
+V(t) = Vo + gt
+<br/><br/>
+onde, V(t) = 0, e g < 0 
+<br/>
+<br/>
+
+        <label>Tempo:</label>
+		 <br/>
+        <input type="text" id="txtMruvT-07"/>
+        <br/>
+		<label>Aceleração da gravidade (g):</label>
+		<br/>
+		<input type="text" id="txtMruvG-07"/>
+		
+		 <br/>
+		<button id="btnEnviar-06" onclick = "gravar11()" >Enviar</button>
+  <button id="btnLimpar-06" onclick = "limpar11()" >Limpar</button>
+</span>
+
+<span id = "span-16">
+Resultado:
+<div id="divResultado-11">
+ 
+ <p id = "resp-11">
+
+   </p>
+   <div id ="container-02">
+    <canvas id="myCanvas-06" width="100" height="70" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<div id ="animate-02"></div>
+</div>
+
+
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+
+
+</div> 			
+			
+			</li>
+			
+<li>O movimento oblíquo <br/> <button class="btn9">mais info</button>
+			<button class="btn10">menos info</button>
+<div class = "tabela" id ="tabela05">
+
+<h3 class = "par-03"> O lançamento oblíquo </h3>	
+
+<p class = "paragrafo">
+O lançamento oblíquo ocorre quando o objeto é arremessado a partir do solo, formando um determinado ângulo 
+em relação à horizontal.
+No lançamento oblíquo, o movimento dos objetos é composto por um deslocamento da vertical e outro horizontal.
+Assim, ao mesmo tempo em que o objeto vai para frente, ele sobe e desce.
+</p>
+
+<div id = "movimentoObliquo">
+<span class = "span-01">
+
+Na direção vertical o corpo realiza um Movimento Uniformemente Variado, com velocidade inicial 
+igual a (Voy) e aceleração da gravidade (g).
+<br/><br/>
+<b> y(t) = yo + (Voy).t - 1/2.(gt²) </b>
+<br/>
+<br/>
+Na direção horizontal o corpo realiza um movimento uniforme com velocidade igual a (Vox).
+<br/>
+sendo, S(t) = So + (Vox).t, e xo = 0;
+<br/>obtemos: 
+<br/>
+<br/>
+<b> x(t) = (Vox).t</b>
+
+</span>
+
+<span id = "span-17">
+<canvas id="myCanvas-10" width="370" height="320" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</span>
+
+</div>
+
+<br/>
+
+<h3 class = "par-03"> As relações trigonométricas do vetor (Vo). </h3>
+
+<p class = "paragrafo">
+Para decompor o vetor em seus componentes são necessários alguns fundamentos de trigonometria:
+</p>
+	
+	<div id = "movimentoObliquo-02">
+<span id = "span-18">
+
+Genericamente podemos chamar o ângulo formado de α .
+<br/>
+Então:
+<br/>
+sin(α) = Voy / |Vo|
+<br/>
+logo:
+<br/>
+<br/>
+<b> Voy = |Vo| . sin(α) </b>
+<br/> e,
+<br/>
+<b> y(t) = yo + Vo.sin(α).t - 1/2.(gt²) </b>
+<br/>
+<br/>
+Na direção horizontal, temos:
+<br/>
+cos(α) = Vox / |Vo|
+<br/>
+logo:
+<br/>
+<b> Vox = |Vo| . cos(α) </b>
+<br/> e,
+<br/>
+<b> x(t) = Vo.cos(α).t  </b>
+<br/>
+
+</span>
+
+<span id = "span-19">
+
+<canvas id="myCanvas-11" width="370" height="320" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</span>
+
+</div>
+
+<br/>
+
+<h3 class = "par-03"> O alcance máximo (Rx) </h3>	
+<p class = "paragrafo">
+Para encontrar o alcance máximo, relaciona-se as equações do espaço vertical e horizontal através do tempo:
+</p>
+	
+	<div id = "movimentoObliquo-02">
+<span id = "span-20">
+
+Portanto, temos.
+<br/>
+<b> (1) y(t) = yo + Vo.sin(α).t - 1/2.(gt²), </b>
+<br/> 
+no deslocamento vertical. E,
+<br/>
+<br/>
+<b> (2) x(t) = Vo.cos(α).t, </b>
+<br/>
+ no deslocamento horizontal.
+<br/>
+<br/>
+Isolando a equação horizontal pelo tempo, temos:
+<br/>
+<b> (3) t = x(t)/ Vo.cos(α)</b>
+<br/>
+<br/>
+Relacionando as equações (1) e (3) pelo tempo,
+<br/>
+<br/>
+y(t)=yo + Vo.sin(α).[x/Vo.cos(α)] - 1/2.g.[x/Vo.cos(α)]²
+<br/>
+<br/>
+No alcance máximo em x, yo = 0 e y(t) = 0, logo:
+</span>
+
+<span id = "span-21">
+0 = 0 + x.[sin(α)/cos(α)] - 1/2.g.x²/[Vo².cos²(α)]
+<br/>
+<br/>
+Como sin(α)/cos(α) = tg(α), temos:
+<br/>
+<br/>
+x.tg(α) = 1/2.g.x² / [Vo².cos²(α)], assim,
+<br/>
+<br/>
+x = 2.tg(α).[Vo².cos²(α)] / g, e,
+<br/>
+x = 2.[sen(α)/cos(α)].[Vo².cos²(α)] / g, logo:
+<br/>
+x = 2.sen(α).cos(α).Vo² / g,
+<br/>
+<br/>
+sendo, 2.sen(α).cos(α) = sen(2α)
+<br/>
+Encontramos, finalmente, a equação do alcance máximo:
+<br/>
+<br/>
+<b> Rx = sen(2α).Vo² / g </b/>
+</span>
+
+</div>
+<br/>
+<p class = "paragrafo">
+Para determinar o gráfico do alcance máximo (Rx):
+</p>
+<div id = "movimentoObliquo-03">
+<span id = "span-22">
+Dada a equação do alcance máximo (Rx):
+<br/><br/>
+Rx = sen(2α).Vo² / g
+<br/><br/>
+onde, o ângulo α compreende (0 < α < 90 graus), 
+<br/>
+e g = 9,8 m/s² 
+<br/>
+<br/>
+
+        <label>Velocidade inicial Vo:</label>
+		 <br/>
+        <input type="text" id="txtMruvVo-08"/>
+        <br/>
+		<label>Ângulo (α) :</label>
+		<br/>
+		<input type="text" id="txtMruvAng-08"/>
+		
+		 <br/>
+		<button id="btnEnviar-07" onclick = "gravar12()" >Enviar</button>
+  <button id="btnLimpar-07" onclick = "limpar12()" >Limpar</button>
+
+</span>
+
+<span id = "span-23">
+Resultado:
+<div id="divResultado-12">
+ 
+ <p id = "resp-12">
+</p>
+ <div id ="container-03">
+ 
+<div id ="animate-03">
+<p id = "resp-13">
+</p>
+<img src = "imagens/seta.png"/>
+</div>
+<canvas id="myCanvas-07" width="400" height="300" style="border:1px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+</div>
+
+</span>
+
+</div>
+<br/>
+
+<h3 class = "par-03"> A altura máxima atingida (ymáx). </h3>	
+<p class = "paragrafo">
+Para encontrar a altura máxima, utilizamos a transformação de Torricelli.:
+</p>
+	
+	<div id = "movimentoObliquo-04">
+<span id = "span-24">
+<p id = "titulo"><b>Movimento Vertical</b></p>
+<p id = "sy"> y = yo + Voy.t + a.t²/2 </p>
+<p id = "sy"> V(t) = Voy + a.t</p>
+<p id = "sy"> V² = Voy² + 2.a.y </p>
+<p id = "sy"> a = -g (eixo orientado para cima).</p>
+
+</span>
+
+<span id = "span-25">
+
+Portanto, temos.
+<br/>
+<b> (1) y(t) = yo + Vo.sin(α).t - 1/2.(gt²), </b>
+<br/> 
+E,
+<br/>
+<br/>
+<b> (2) Vy(t) = Vo.sen(α).g.t, </b>
+<br/>
+ no deslocamento vertical.
+<br/>
+<br/>
+Relacionando as equações verticais (1) e (2) pelo tempo, temos:
+<br/>
+<b> (3) Vy² = Voy² - 2.g.(y - yo) </b>
+<br/>
+<br/>
+Adotando Vy = 0 e yo = 0, para a altura máxima: 
+<br/>
+<br/>
+0 = Voy² - 2.g.y, obtemos:
+<br/>
+<br/>
+<b> ymáx = Vo².sin²(α) / 2.g </b>
+</span>
+
+</div>
+<br/>
+<p class = "paragrafo">
+Para determinar o gráfico da altura máxima (ymáx):
+</p>
+<div id = "movimentoObliquo-05">
+
+<span id = "span-26">
+Dada a equação da altura máxima ymáx:
+<br/><br/>
+ ymáx = Vo².sin²(α) / 2.g 
+<br/><br/>
+onde, o ângulo α compreende (0 < α < 90 graus), 
+<br/>
+e g = 9,8 m/s² 
+<br/>
+<br/>
+
+        <label>Velocidade inicial Vo:</label>
+		 <br/>
+        <input type="text" id="txtMruvVo-09"/>
+        <br/>
+		<label>Ângulo (α) :</label>
+		<br/>
+		<input type="text" id="txtMruvAng-09"/>
+		
+		 <br/>
+		<button id="btnEnviar-08" onclick = "gravar13()" >Enviar</button>
+  <button id="btnLimpar-08" onclick = "limpar13()" >Limpar</button>
+
+</span>
+
+<span id = "span-27">
+Resultado:
+<div id="divResultado-14">
+ 
+ <p id = "resp-14">
+</p>
+ <div id ="container-04">
+ 
+<div id ="animate-04">
+<img src = "imagens/seta-02.png"/>
+ <p id = "resp-15">
+</p>
+</div>
+<canvas id="myCanvas-08" width="400" height="350" style="border:1px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+</div>
+
+</span>
+
+</div>
+
+<br/>
+
+</div> 			
+			
+			</li>
+			
+			<li>O movimento circular <br/> <button class="btn11">mais info</button>
+			<button class="btn12">menos info</button>
+
+<div class = "tabela" id ="tabela06">
+<h3 class = "par-03"> Grandezas Angulares </h3>	
+
+<p class = "paragrafo">
+Até então, as grandezas de espaço, velocidade e aceleração utilizadas, eram úteis para descrever movimentos lineares, 
+isto é, unidimensionais.
+Contudo, na análise de movimento circulares, introduziremos grandezas angulares, cujas medidas efetudas em radianos
+são necessárias para descrever tais movimentos.
+</p>
+
+<div id = "movimentoCircular">
+<span class = "span-01">
+
+Da definição de radianos temos:
+<br/>
+<b> Φ = S / R </b>
+<br/>
+onde,
+<br/>
+<b> Φ (phi) </b>: Deslocamento angular.
+<br/>
+<b> S </b>: Arco de circunferência.
+<br/>
+<b> R </b>: Raio de circunferência.
+<br/>
+sendo a variação do deslocamento angular,
+<br/> 
+<b> ∆Φ = Φ - Φo →
+<br/>
+ ∆Φ = ∆S / R </b>
+<br/>
+Análogo à velocidade linear, podemos definir a<b> Velocidade angular </b>
+<br/>
+como a razão entre o deslocamento angular e a variação de tempo.
+<br/>
+<b> ω (ômega) = ∆Φ / ∆t </b>
+<br/>
+A <b> Aceleração angular </b> é definida através da razão entre a variação da velocidade angular
+pela variação de tempo.
+<br/>
+<b>  α (alpha) = ∆ω / ∆t </b>
+<br/>
+
+
+</span>
+
+<span id = "span-29">
+<canvas id="myCanvas-13" width="370" height="390" style="border:2px solid red;">
+<b> 2.π rad = 360 graus</b>
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</span>
+
+</div>
+
+<br/>
+
+<h3 class = "par-03"> O Movimento Circular Uniforme </h3>
+
+<p class = "paragrafo">
+No movimento circular uniforme, embora a velocidade linear seja constante, ela sofre
+mudança de direção e sentido, portanto existe uma aceleração que não influencia no módulo da velocidade.
+Ela é conhecida como Aceleração Centrípeta. 
+</p>
+
+<div id = "movimentoCircular-02">
+<span class = "span-01">
+
+Algumas relações importantes:
+<br/>
+<br/>
+<b> S (linear) = (angular) Φ.r </b>
+<br/>
+<b> v (linear) = (angular) ω.r </b>
+<br/>
+<b> A (linear) = (angular) α.r </b>
+<br/>
+<br/>
+<b> A aceleração centrípeta </b> é dada por:
+<br/>
+<br/>
+<b> a cp = v² / r </b> e <b> v = ω.r </b>
+<br/>
+logo
+<br/>
+<b> a cp = ω².r </b>
+<br/>
+e, se <b> S = So + v.t </b>
+<br/>
+então, pode-se converter a equação da função horária do espaço linear para o angular.
+<br/>
+<b> Φ = Φo + ω.t </b>
+</span>
+
+<span id = "span-29">
+<canvas id="myCanvas-14" width="370" height="320" style="border:2px solid red;">
+<b> 2.π rad = 360 graus</b>
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</span>
+
+</div>
+
+<br/>
+
+	
+<h3 class = "par-03"> O Movimento Circular Uniformemente Variado </h3>
+<p class = "paragrafo">
+No movimento Circular Uniformemente Variado, há variação no módulo da velocidade angular,
+logo, um corpo que descreve um MCUV, possui aceleração angular. 
+</p>
+
+<div id = "movimentoCircular-03">
+<span id = "span-30">
+
+<table style="width:90%" id = "mcuv">
+  <tr>
+    <th> MUV </th>
+    <th> MCUV </th> 
+
+  </tr>
+  <tr>
+    <td> Grandezas Lineares </td>
+    <td> Grandezas Angulares </td>
+    </tr>
+  <tr>
+    <td> v = vo + a.t </td>
+    <td>ω = ωo + ω.t </td>
+  </tr>
+  <tr>
+    <td>s = so + vo.t + (a.t²)/2</td>
+    <td>Φ = Φo + ωo.t + (α.t²)/2</td>
+  </tr>
+   <tr>
+    <td> am = ∆v / ∆t </td>
+    <td> αm = ∆ω / ∆t </td>
+  </tr>
+   <tr>
+    <td> v² = vo² + 2.a.∆s </td>
+    <td> ω² = ωo² + 2.α.∆Φ  </td>
+  </tr>
+</table>
+</span>
+
+<span id = "span-31">
+<canvas id="myCanvas-15" width="800" height="200" style="border:2px solid red;">
+<b> 2.π rad = 360 graus</b>
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+</div>
+<br/>
+
+<p class = "paragrafo">
+Para determinar as relações do MCU:
+</p>
+<div id = "movimentoCircular-04">
+<span id = "span-32">
+Dadas as equações do MCU:
+
+<br/><br/>
+
+<b> Φ = s / r </b>
+<br/>
+<b> ω = Φ / t → ω = 2.π / t</b>
+<br/>
+<b> v = ω.r</b>
+<br/>
+<b> a cp = ω².r </b>
+<br/><br/>
+onde, o ângulo Φ compreende (0 < Φ < 2.π rad), 
+<br/>
+<br/>
+
+        <label>Raio da circunferência r:</label>
+		 <br/>
+        <input type="text" id="txtMcuR"/>
+        <br/>
+		<label> Tempo :</label>
+		<br/>
+		<input type="text" id="txtMcuT"/>
+		
+		 <br/>
+		<button id="btnEnviar-09" onclick = "gravar14()" >Enviar</button>
+  <button id="btnLimpar-09" onclick = "limpar14()" >Limpar</button>
+
+</span>
+
+<span id = "span-33">
+Resultado:
+<div id="divResultado-15">
+ 
+ <p id = "resp-16">
+</p>
+
+ <div id ="container-05"> 
+ 
+<canvas id="myCanvas-16" width="400" height="250" style="border:1px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+</div>
+</div>
+
+</span>
+
+</div>
+<br/>
+	
+</div> 			
+</li>
+
+</ul>
+</nav>
+   
+</section>
+ </div>
+ 
+ <hr id = "rodape" />
+ 
+ <footer>
+<h1 id = "rodape"> Samuel Delmonte</h1>
+
+ </footer>
+
+				
+				
+				 <script src="js/cinematica.js"></script>
+ </body>
+ </html>
+ 
+ 
