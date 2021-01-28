@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html>
+<title> Portfolio Online </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/portfolio.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/portfolio.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+
+<style>
+
+.w3-third img{
+
+cursor: pointer;
+   border:2px solid #000;
+}
+
+.w3-row{
+
+ 
+background-color: #fff;
+}
+
+.w3-third{
+margin-left:2%;
+margin-bottom:2%;
+width:30%;
+}
+
+.w3-third-02{
+margin-left:20%;
+margin-bottom:2%;
+width:60%;
+}
+		
+	.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+}
+
+ .image:hover {
+  opacity: 0.3;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	background-color:#fff;
+	border:1px solid #000;
+}
+
+
+
+
+				@media (max-width:800px){
+		.menu li a:link, .menu li a:visited{
+	font:15px Arial;
+		}
+				div.desc {
+    font-size:10px;
+}
+
+.w3-third{
+margin-left:20%;
+margin-bottom:2%;
+width:60%;
+}
+		
+			}
+
+
+		
+
+</style>
+<body class="corpo" id = "corpo">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>	
+ 
+<!-- Page Container -->
+<div class="content margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="row-padding">
+  
+    <!-- Left Column -->
+    <div class="third">
+    
+      <div class="white text-grey card-4">
+        <div class="display-container">
+          <img src="imagens/samuel-01.jpg" style="width:100%" alt="Samuel Delmonte">
+          <div class="display-bottomleft container text-black">
+            <h2 id = "nome">Samuel Delmonte</h2>
+          </div>
+        </div>
+        <div class="container">
+          <p class = "skill"><i class="fa fa-briefcase fa-fw margin-right large  text-teal"></i>Desenvolvedor Web </p>
+          <p class = "skill"><i class="fa fa-home fa-fw margin-right large text-teal"></i> São Paulo, Brasil </p>
+          <p class = "skill"><i class="fa fa-envelope fa-fw margin-right large text-teal"></i> scdelmonte@hotmail.com</p>
+          <p class = "skill"><i class="fa fa-phone fa-fw margin-right large text-teal"></i></p>
+          <hr>
+
+          <p class="large"><b><i class="fa fa-asterisk fa-fw margin-right text-teal"></i>Skills</b></p>
+          <p class = "skill">HTML 05</p>
+          <div class="light-grey round-xlarge small">
+            <div class="container center round-xlarge teal" style="width:90%">90%</div>
+          </div>
+          <p class = "skill"> CSS 03 </p>
+          <div class="light-grey round-xlarge small">
+            <div class="container center round-xlarge teal" style="width:80%">
+              <div class="center text-white">80%</div>
+            </div>
+          </div>
+          <p class = "skill"> JavaScript </p>
+          <div class="light-grey round-xlarge small">
+            <div class="container center round-xlarge teal" style="width:75%">75%</div>
+          </div>
+          <p class = "skill"> Bibliotecas JavaScript (Frameworks)</p>
+          <div class="light-grey round-xlarge small">
+            <div class="container center round-xlarge teal" style="width:50%">50%</div>
+          </div>
+          <br>
+
+          <p class="large text-theme"><b><i class="fa fa-globe fa-fw margin-right text-teal"></i> Idiomas </b></p>
+          <p class = "skill">Espanhol</p>
+          <div class="light-grey round-xlarge">
+            <div class="round-xlarge teal" style="height:24px;width:100%"></div>
+          </div>
+          <p class = "skill">Inglês</p>
+          <div class="light-grey round-xlarge">
+            <div class="round-xlarge teal" style="height:24px;width:55%"></div>
+          </div>
+         
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+	
+	
+    <div class="twothird">
+	
+	 
+    
+      <div class="container card white margin-bottom">
+       
+	 <div id = "menu">
+	<nav>
+		<ul class = "menu">
+		
+		<li> <a href = "#" id = "btnSobre"> Perfil </a> </li>
+		<li> <a href = "#" id = "btnServicos" > Serviços  </a> </li>
+		<li> <a href = "#" id = "btnEducacao" > Educação  </a> </li>
+		
+		<li>
+		 <div class="dropdown">
+  <a class="dropbtn" href = "#" onclick="myFunction()">Portfólio
+    <i class="fa fa-caret-down"></i>
+  </a>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#" id = "btnportfolio" >Cursos</a>
+    <a href="#" id = "btnmeutrabalho"> Meu Tarbalho</a>
+    <a href="#" id = "btnportfolios"> Portfólios e Sites de Fotos </a>
+    <a href="#" id = "btncinematica"> A Cinemática </a>
+    <a href="#" id = "btnanimacoes">Animações</a>
+    <a href="#" id = "btntamplates">Tamplates</a>
+    <a href="#" id = "btndemos">Demos</a>
+  </div>
+  </div> 
+  </li>
+		<li> <a href = "#" id = "btnContato"> Contato </a> </li>
+		</ul>
+		</nav>
+	</div>
+
+
+
+		<div class="container">
+		
+		<h4 class="opacity" id = "h4-perfil"><b> Perfil </b></h4>
+          <h5 class="opacity"><b>Front End Developer / Desenvolverdor Front End </b></h5>
+		  
+		  <div id = "perfil">
+          <p> 
+		  Desde os 15 anos de idade já me aventurava no mundo fascinante dos códigos e das equações. 
+Mas antes, o que era uma paixão, um hobby - tornou-se profissão!
+<br/>
+E, em 2013, decidi ocupar-me da tarefa de desenvolvedor web (front-end).
+<br/>
+Trabalhei em agências de publicidade e ministrando aulas particulares de física e matemática. 
+<br/>
+	
+	Sou formado em Análise e Desenvolvimento dse Sistemas pela Universidade Anhembi Morumbi . Além do aprendizado de programador, 
+		  sempre me interessei pela pesquisa e desenvolvimento das tecnologias que constróem o conhecimento. 
+		  <br/>
+
+		  Hoje, trabalho com as áreas de desenvolvimento de front end (HTML, CSS e JavaScript). </p>
+          <hr>
+       
+		
+        <div class="container">
+          <h5 class="opacity"><b> CONHECIMENTO TÉCNICO </b></h5>
+          <p> 
+
+<i class="fa fa-asterisk fa-fw margin-right text-teal"></i> 
+Especialista em HTML, CSS e construção de websites.
+<br/>
+<i class="fa fa-asterisk fa-fw margin-right text-teal"></i> 
+Conhecimentos avançados nas linguagens PHP, Java, JavaScript e jQuery.
+<br/>
+<i class="fa fa-asterisk fa-fw margin-right text-teal"></i>
+Experiência em design de interfaces e em design gráfico.
+<br/>
+<i class="fa fa-asterisk fa-fw margin-right text-teal"></i>
+Conhecimentos essenciais de Photoshop e das ferramentas complementares utilizadas para o desenvolvimento de websites.
+<br/>
+		  </p>
+          <hr>
+        </div>
+		
+		
+       
+		
+        <div class="container">
+          <h5 class="opacity"><b> SOBRE ESTE SITE </b></h5>
+          <p> 
+
+<i class="fa fa-asterisk fa-fw margin-right text-teal"></i> 
+Este site foi totalmente construído com HTML 05, CSS 03, JavaScript e jQuery, no editor de textos Notepad++.
+<br/>
+
+		  </p>
+          <hr>
+        </div>
+		
+		 </div>
+		 
+		 <h4 class="opacity" id = "h4-servicos"><b> Serviços </b></h4>
+		 		 
+				 <div id = "servicos">
+          <p> 
+Sou especializado em desenvolvimento de websites, do front end (HTML, CSS e JavaScript), 
+oferecendo um serviço completo de construção de sites e sistemas online. 
+Trabalho em conjunto com designers para dar vida ao seu projeto. 
+<br/>
+<br/>
+O que eu posso fazer para você e para sua empresa:
+<br/>
+<br/>
+
+<i class="fa fa-asterisk fa-fw margin-right text-teal"></i>
+Desenvolvimento de websites e sistemas online
+<br/>
+<i class="fa fa-asterisk fa-fw margin-right text-teal"></i>
+Construção de layouts e adaptação responsiva (PSD para HTML)
+<br/>
+<i class="fa fa-asterisk fa-fw margin-right text-teal"></i>
+Manutenção e atualização de websites
+<br/>
+<i class="fa fa-asterisk fa-fw margin-right text-teal"></i>
+Atualização técnica de websites (instalação ou criação de novo sistema de gerenciamento / site responsivo em um projeto já existente)
+
+ </p>
+          <hr>
+       
+		
+       
+		 </div>
+		 
+		 <h4 class="opacity" id = "h4-contato"><b> Contato </b></h4>
+		 		 
+				 <div id = "contato">
+		 <p>
+			Envie um e-mail para <a href="mailto:scdelmonte@hotmail.com"> scdelmonte@hotmail.com </a>.		
+			</p>
+			
+			 <hr>
+		 
+
+		
+		  </div>
+		  
+        </div>
+       
+      </div>
+
+      <div class="container card white margin-bottom">
+        <h2 class="text-grey padding-16" id = "h2-educacao"> Educação </h2>
+       
+	   <div class="container">
+          <h5 class="opacity"><b> Universidade Anhembi Morumbi</b></h5>
+       
+          <p> Graduado em Análise e Desenvolvimento de Sistemas .</p>
+          <hr>
+        </div>
+       
+		
+       
+      </div>
+
+    <!-- End Right Column -->
+	
+		
+
+		 
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+		  
+		  <div id = "portfolio" >
+		  
+		  <h4 class="opacity" id = "h4-portfolio"><b> Portfólio </b></h4>
+          <h5 class="opacity" id = "h5-cursos"><b> Cursos extra-curriculates </b></h5>
+		  
+
+
+
+
+
+			 
+	
+          <hr>
+		    <div class="w3-row">
+
+		      <div class="w3-third">
+	
+	<div class="container">
+<div class="w3-card">
+ <img src="imagens/css3.jpg" style="width:100%" onclick="onClick(this)" alt="CSS3!" class="image">
+<div class="w3-container">
+<h4 class = "cursos-h4">CSS3</h4>
+</div>
+</div>
+	   </div>
+	   <br/>
+	   
+		
+	<div class="container">
+<div class="w3-card">
+ <img src="imagens/jQuery.jpg" style="width:100%" onclick="onClick(this)" alt="JQUERY!" class="image">
+<div class="w3-container">
+<h4 class = "cursos-h4">JQUERY</h4>
+</div>
+</div>
+	   </div>
+	   <br/>
+	   
+		
+	<div class="container">
+	<div class="w3-card">
+      <img src="imagens/angular04.jpg" style="width:100%" onclick="onClick(this)" alt="Angular 4!" class="image">
+	   
+	  
+	  
+	<div class="w3-container">
+<h4 class = "cursos-h4">Angular 4</h4>
+</div>
+	   </div>
+	   </div>
+	   <br/>
+	   </div>
+	
+    <div class="w3-third">
+	<div class="container">
+<div class="w3-card">
+<img src="imagens/html5.jpg" style="width:100%" onclick="onClick(this)" alt="HTML5!" class="image">
+<div class="w3-container">
+<h4 class = "cursos-h4">HTML5</h4>
+</div>
+</div>
+</div>
+	   <br/>
+	   
+		
+	<div class="container">
+<div class="w3-card">
+ <img src="imagens/photoshop.jpg" style="width:100%" onclick="onClick(this)" alt="PHOTOSHOP!" class="image">
+<div class="w3-container">
+<h4 class = "cursos-h4">PHOTOSHOP</h4>
+</div>
+</div>
+	   </div>
+	   <br/>
+	   
+		
+	<div class="container">
+	<div class="w3-card">
+      <img src="imagens/front-end.jpg" style="width:100%" onclick="onClick(this)" alt="DESENVOLVEDOR FRONT-END!" class="image">
+	   
+	  
+	  
+	<div class="w3-container">
+<h4 class = "cursos-h4">DESENVOLVEDOR FRONT-END </h4>
+</div>
+	   </div>
+	   </div>
+	<br/>
+	 
+	   
+    </div>
+	
+	
+    <div class="w3-third">
+	<div class="container">
+<div class="w3-card">
+<img src="imagens/javaScript.jpg" style="width:100%" onclick="onClick(this)" alt="JAVASCRIPT!" class="image">
+<div class="w3-container">
+<h4 class = "cursos-h4">JAVASCRIPT</h4>
+</div>
+</div>
+</div>
+	   <br/>
+	   
+		
+	<div class="container">
+<div class="w3-card">
+ <img src="imagens/certificado_desing thinking.png" style="width:100%" onclick="onClick(this)" alt="DESIGN THINKING!" class="image">
+<div class="w3-container">
+<h4 class = "cursos-h4">DESIGN THINKING</h4>
+</div>
+</div>
+	   </div>
+	   <br/>
+			
+	<div class="container">
+<div class="w3-card">
+ <img src="imagens/angularJS.jpg" style="width:100%" onclick="onClick(this)" alt="ANGULARJS!" class="image">
+<div class="w3-container">
+<h4 class = "cursos-h4">ANGULARJS</h4>
+</div>
+</div>
+	   </div>   
+		
+
+	<br/>
+	
+	</div>
+	
+	
+  </div>
+  
+   <hr/>
+       
+		
+        <div class="container">
+          <h5 class="opacity" id = "h5-meuTrabalho"><b> Meu Trabalho </b></h5>
+		  
+		  <hr/>
+		  
+		    <h5 class="opacity" id = "h5-meuTrabalho"><b> 1 - HTML + CSS + JAVASCRIPT </b></h5>
+			
+					  <hr/>
+					  
+					  		   
+		  
+		   <div class="w3-hide-large" ></div>
+		   
+		     <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+	
+	<div class="container">
+      <img src="trabalhos/calculadora/image/calculadora-01.png" style="width:100%"  alt="Calculadora!" class="image">
+	   
+	  
+	  
+	   <div class="desc"> Calculadora.
+	    <div class="middle">
+    <div class="text"> <a href = "trabalhos/calculadora/calculadora.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	   <div class="container">
+ <img src="trabalhos/formulario-jQuery/img/formulario-jquery.png" style="width:100%"  alt=" Formulário jQuery!" class="image">	  
+	  	 
+	  
+       <div class="desc"> Formulário jQuery.
+	     <div class="middle02">
+    <div class="text02"> <a href ="trabalhos/formulario-jQuery/formulario-jquery.html"target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	  <div class="container">
+ <img src="trabalhos/blog-gastronomia/img/gastronomia.jpg" style="width:100%"  alt="Blog de Gastronomia!" class="image">	  
+	  	
+		
+	 <div class="desc"> Blog de Gastronomia.
+	 <div class="middle03">
+ <div class="text03"> <a href = "trabalhos/blog-gastronomia/gastronomia.html" target = "_blank"> Confira o site </a> </div>
+  </div>     
+	    
+	 </div>
+	</div>
+	   <br/>
+	   
+	   	  <div class="container">
+ <img src="trabalhos/site-com-prototype/img/home-02.jpg" style="width:100%"  alt="Site com Prototype!" class="image">	  
+	  	
+		
+	 <div class="desc"> Site com Prototype.
+	 <div class="middle03">
+ <div class="text03"> <a href = "trabalhos/site-com-prototype/index.html" target = "_blank"> Confira o site </a> </div>
+  </div>     
+	    
+	 </div>
+	</div>
+		   <br/>
+	   
+	   	  <div class="container">
+ <img src="trabalhos/jQuery-UI/galeria/imagem/d6-02.jpg" style="width:100%"  alt=" Galeria com jQuery UI!" class="image">	  
+	  	
+		
+	 <div class="desc"> Galeria com jQuery UI.
+	 <div class="middle03">
+ <div class="text03"> <a href = "trabalhos/jQuery-UI/galeria/index.html" target = "_blank"> Confira o site </a> </div>
+  </div>     
+	    
+	 </div>
+	</div>
+	
+		   <br/>
+	   
+	   	  <div class="container">
+ <img src="trabalhos/Containers-e-Sistema-de-Grades/img/img1-02.jpg" style="width:100%"  alt=" Containers e Sistema de Grades!" class="image">	  
+	  	
+		
+	 <div class="desc"> Containers e Sistema de Grades.
+	 <div class="middle03">
+ <div class="text03"> <a href = "trabalhos/Containers-e-Sistema-de-Grades/index.html" target = "_blank"> Confira o site </a> </div>
+  </div>     
+	    
+	 </div>
+	</div>
+	
+			   <br/>
+	   
+	   	  <div class="container">
+ <img src="trabalhos/guilherme/imagens/hamburger.png" style="width:100%"  alt="Chef's Gui & Hay.!" class="image">	  
+	  	
+		
+	 <div class="desc"> Chef's Gui & Hay.
+	 <div class="middle03">
+ <div class="text03"> <a href = "trabalhos/guilherme/tamplate_Gourmet.html" target = "_blank"> Confira o site </a> </div>
+  </div>     
+	    
+	 </div>
+	</div>
+	
+	   </div>
+
+    <div class="w3-third">
+	<div class="container">
+ <img src= "trabalhos/formulario/img/fundo.jpg" style="width:100%"  alt="Calculadoras!" class="image">	  
+       	
+		
+	   
+	   <div class="desc">  Formulário 01.
+	   <div class="middle04">
+    <div class="text04"> <a href = "trabalhos/formulario/formulario.html"  target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	  <div class="container">
+ <img src="trabalhos/cinema/img/fundo-02.jpg" style="width:100%"  alt="Cinema!" class="image">	  
+       
+	   	  	 
+	   <div class="desc">  Cinema.
+	     <div class="middle05">
+  <div class="text05"> <a href = "trabalhos/cinema/cinema.html"  target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	  <div class="container">
+ <img src="trabalhos/blog-banda/img/banda.jpg " style="width:100%"  alt="Blog de Banda!" class="image">	  
+     	
+		
+	 
+	 <div class="desc"> Blog de Banda.
+	 <div class="middle06">
+    <div class="text06"> <a href = "trabalhos/blog-banda/banda.html"  target = "_blank"> Confira o site </a>
+	</div>
+  </div>
+	 </div>
+	</div>
+	<br/>
+	
+		  <div class="container">
+ <img src="trabalhos/fotografia/imagens/imagem-02.jpg " style="width:100%"  alt=" Fotografia!" class="image">	  
+     	
+		
+	 
+	 <div class="desc"> Fotografia.
+	 <div class="middle06">
+    <div class="text06"> <a href = "trabalhos/fotografia/index.html"  target = "_blank"> Confira o site </a>
+	</div>
+  </div>
+	 </div>
+	</div>
+	<br/>
+	 
+	 		  <div class="container">
+ <img src="trabalhos/jQuery-UI/efeitos/imagem/monster-02.png" style="width:100%"  alt=" Efeitos com jQuery UI!" class="image">	  
+     	
+		
+	 
+	 <div class="desc"> Efeitos com jQuery UI.
+	 <div class="middle06">
+    <div class="text06"> <a href = "trabalhos/jQuery-UI/efeitos/index.html"  target = "_blank"> Confira o site </a>
+	</div>
+  </div>
+	 </div>
+	</div>
+	
+	<br/>
+	 
+	 		  <div class="container">
+ <img src="trabalhos/geolocalizacao/img/geolocalizacao.png" style="width:100%"  alt="  Geolocalização" class="image">	  
+     	
+		
+	 
+	 <div class="desc"> Geolocalização.
+	 <div class="middle06">
+    <div class="text06"> <a href = "trabalhos/geolocalizacao/index.html"  target = "_blank"> Confira o site </a>
+	</div>
+  </div>
+	 </div>
+	</div> 
+	
+		<br/>
+	 
+	 		  <div class="container">
+  <img src="trabalhos/guilherme/imagens/logo-gui-04.jpg" style="width:100%"  alt="Chef's Gui & Hay.!" class="image">	  
+
+     	
+
+	 
+	 <div class="desc">Chef's Gui & Hay.
+	 <div class="middle06">
+    <div class="text06"> <a href = "trabalhos/guilherme/tamplate_cafe.html"  target = "_blank"> Confira o site </a>
+	</div>
+  </div>
+	 </div>
+	</div> 
+	   
+    </div>
+	
+	
+    <div class="w3-third">
+	
+	<div class="container">
+ <img src="trabalhos/formulario-02/img/formulario-02.png" style="width:100%"  alt="Formulário 02" class="image">	  
+    	
+		
+		
+		<div class="desc"> Formulário 02.
+		<div class="middle07">
+    <div class="text07"> <a href = "trabalhos/formulario-02/formulario-02.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+		</div>
+</div>
+<br/>
+	
+	<div class="container">
+ <img src="trabalhos/decoracao/img/ecommerce.jpg" style="width:100%"  alt=" Modelo de E-Commerce!" class="image">	  
+	
+	
+
+	<div class="desc"> Modelo de E-Commerce.
+	<div class="middle08">
+    <div class="text08"> <a href = "trabalhos/decoracao/home.html" target = "_blank"> Confira o site </a> </div>
+  </div>    
+	</div>
+	  </div>
+	  <br/>
+	  
+	  <div class="container">
+ <img src="trabalhos/blog-turismo/img/turismo-06.jpg" style="width:100%"  alt="Blog de Turismo!" class="image">	  
+	
+	
+
+	<div class="desc"> Blog de Turismo.
+	<div class="middle09">
+    <div class="text08"> <a href = "trabalhos/blog-turismo/turismo.html" target = "_blank"> Confira o site </a> </div>
+  </div>    
+	</div>
+	</div>
+	<br/>
+	
+		  <div class="container">
+ <img src="trabalhos/galeria/img/ponte.jpg" style="width:100%"  alt="Galeria!" class="image">	  
+	
+	
+
+	<div class="desc"> Galeria.
+	<div class="middle09">
+    <div class="text08"> <a href = "trabalhos/galeria/index.html" target = "_blank"> Confira o site </a> </div>
+  </div>    
+	</div>
+	</div>
+	<br/>
+	
+	
+	
+			  <div class="container">
+ <img src="trabalhos/jQuery-UI/widgets/imagem/widgets.png" style="width:100%"  alt=" Widgets com jQuery UI!" class="image">	  
+	
+	
+
+	<div class="desc"> Widgets com jQuery UI.
+	<div class="middle09">
+    <div class="text08"> <a href = "trabalhos/jQuery-UI/widgets/index.html" target = "_blank"> Confira o site </a> </div>
+  </div>    
+	</div>
+	</div>
+	<br/>
+	
+				  <div class="container">
+ <img src="trabalhos/sistema-de-inventario/imagem/s2-02.png" style="width:100%"  alt=" Widgets com jQuery UI!" class="image">	  
+	
+	
+
+	<div class="desc"> Sistema de Inventario.
+	<div class="middle09">
+    <div class="text08"> <a href = "trabalhos/sistema-de-inventario/index.html" target = "_blank"> Confira o site </a> </div>
+  </div>    
+	</div>
+	</div>
+	
+		<br/>
+	
+				  <div class="container">
+ <img src="trabalhos/guilherme/imagens/logo-gui-03.jpg" style="width:100%"  alt="Chef's Gui & Hay!" class="image">	  
+	
+	
+
+	<div class="desc"> Chef's Gui & Hay.
+	<div class="middle09">
+    <div class="text08"> <a href = "http://naturezael.dominiotemporario.com/pasta-02/" target = "_blank"> Confira o site </a> </div>
+  </div>    
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	
+	
+	
+  </div>
+  
+   <hr/>
+   
+    <h5 class="opacity" id = "h5-portfolios"><b> PORTFÓLIOS E SITES DE FOTOS  </b></h5>
+			
+<div class="w3-row">
+
+    <div class="w3-third">
+	
+		
+	<div class="container">
+      <img src="trabalhos/rambo/imagens/rambo-10-02.jpg" style="width:100%"  alt="Rambo: Um intrépido Dachshund!" class="image">
+	   
+	  
+	  
+	   <div class="desc"> Rambo: Um intrépido Dachshund.
+	    <div class="middle">
+    <div class="text"> <a href = "trabalhos/rambo/index.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	
+	</div>
+	
+	  <div class="w3-third">
+	
+		
+	<div class="container">
+      <img src="trabalhos/punk-01/imagens/sid-26-02.JPG" style="width:100%"  alt="Sid Vicious!" class="image">
+	   
+	  
+	  
+	   <div class="desc"> Sid Vicious.
+	    <div class="middle">
+    <div class="text"> <a href = "trabalhos/punk-01/index.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	
+	</div>
+	
+	  <div class="w3-third">
+	
+<div class="container">
+      <img src="trabalhos/formulas/imagens/belas-equacoes.png" style="width:100%"  alt="Equações Famosas!" class="image">
+	   
+	  
+	  
+	   <div class="desc"> Equações Famosas I.
+	   
+	   <div class="middle">
+    <div class="text"> <a href = "trabalhos/formulas/formulas.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	
+	</div>
+	<div class="w3-third">
+	
+		<div class="container">
+			 
+			   <div class = "container-iframe"> 
+			  
+				<iframe class="responsive-iframe" scrolling="no" src="https://samueldelmonte.com.br/" style="width:100%" ></iframe>
+			  
+			</div>
+			  
+			   <div class="desc"> Portfólio Novo.
+			   
+			   <div class="middle">
+			<div class="text"> <a href = "https://samueldelmonte.com.br/" target = "_blank"> Confira o site </a> </div>
+		  </div>
+			   </div>
+			   </div>
+			   <br/>
+			
+			</div>	
+
+			<div class="w3-third">
+	
+				<div class="container">
+					 
+					   <div class = "container-iframe"> 
+					  
+						<iframe class="responsive-iframe" scrolling="no" src="tamplates/tamplate_artquiteto.html" style="width:100%" class="image"></iframe>
+					  
+					</div>
+					  
+					   <div class="desc"> E-Commerce Underground.
+					   
+					   <div class="middle">
+					<div class="text"> <a href = "tamplates/tamplate_artquiteto.html" target = "_blank"> Confira o site </a> </div>
+				  </div>
+					   </div>
+					   </div>
+					   <br/>
+					
+					</div>	
+			
+	
+	   </div>
+	   
+	     <hr/>
+   
+      <h5 class="opacity" id = "h5-cinematica"><b> A CINEMÁTICA </b></h5>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+	
+	<div class="container">
+      <img src="trabalhos/imagens/viajar-no-tempo-02.jpg" style="width:100%" onclick="onClick(this)" alt="Viagem no tempo!" class="image">
+	   
+	  
+	  
+	   <div class="desc"> Simulador de viagens no tempo.
+	    <div class="middle">
+    <div class="text"> <a href = "trabalhos/trabalho-01.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	   <div class="container">
+ <img src="trabalhos/imagens/velocidade 01-01.jpg" style="width:100%" onclick="onClick(this)" alt="A Velocidade!" class="image">	  
+	  	 
+	  
+       <div class="desc"> A Velocidade.
+	     <div class="middle02">
+    <div class="text02"> <a href ="trabalhos/trabalho-04.html"target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	  <div class="container">
+ <img src="trabalhos/imagens/lanc-vertical.png" style="width:100%" onclick="onClick(this)" alt="Lançamento Vertical!" class="image">	  
+	  	
+		
+	 <div class="desc"> Movimento Vertical.
+	 <div class="middle03">
+ <div class="text03"> <a href = "trabalhos/trabalho-07.html" target = "_blank"> Confira o site </a> </div>
+  </div>     
+	    
+	 </div>
+	</div>
+	   <br/>
+	   </div>
+
+    <div class="w3-third">
+	<div class="container">
+ <img src= "trabalhos/imagens/calculadora.jpg" style="width:100%" onclick="onClick(this)" alt="Calculadoras!" class="image">	  
+       	
+		
+	   
+	   <div class="desc">  Calculadoras.
+	   <div class="middle04">
+    <div class="text04"> <a href = "trabalhos/trabalho-02.html"  target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	  <div class="container">
+ <img src="trabalhos/imagens/movimento-uniforme-02.jpg" style="width:100%" onclick="onClick(this)" alt="O Movimento Uniforme!" class="image">	  
+       
+	   	  	 
+	   <div class="desc">  O Movimento Uniforme.
+	     <div class="middle05">
+  <div class="text05"> <a href = "trabalhos/trabalho-05.html"  target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	  <div class="container">
+ <img src="trabalhos/imagens/lancamento-obliquo.jpg " style="width:100%" onclick="onClick(this)" alt="O Movimento Obliquo!" class="image">	  
+     	
+		
+	 
+	 <div class="desc"> O Movimento Obliquo.
+	 <div class="middle06">
+    <div class="text06"> <a href = "trabalhos/trabalho-08.html"  target = "_blank"> Confira o site </a>
+	</div>
+  </div>
+	 </div>
+	</div>
+	<br/>
+	 
+	   
+    </div>
+	
+	
+    <div class="w3-third">
+	
+	<div class="container">
+ <img src="trabalhos/imagens/relatividade-especial-01.jpg" style="width:100%" onclick="onClick(this)" alt="A Relatividade Especial!" class="image">	  
+    	
+		
+		
+		<div class="desc">A Relatividade Especial.
+		<div class="middle07">
+    <div class="text07"> <a href = "trabalhos/trabalho-03.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+		</div>
+</div>
+<br/>
+	
+	<div class="container">
+ <img src="trabalhos/imagens/movimento-uniformemente-variado-02.jpg" style="width:100%" onclick="onClick(this)" alt="MUV!" class="image">	  
+	
+	
+
+	<div class="desc"> Movimento Uniformemente Variado.
+	<div class="middle08">
+    <div class="text08"> <a href = "trabalhos/trabalho-06.html" target = "_blank"> Confira o site </a> </div>
+  </div>    
+	</div>
+	  </div>
+	  <br/>
+	  
+	  <div class="container">
+ <img src="trabalhos/imagens/circular.jpg" style="width:100%" onclick="onClick(this)" alt="O Movimento Circular!" class="image">	  
+	
+	
+
+	<div class="desc"> O Movimento Circular.
+	<div class="middle09">
+    <div class="text08"> <a href = "trabalhos/trabalho-09.html" target = "_blank"> Confira o site </a> </div>
+  </div>    
+	</div>
+	</div>
+	<br/>
+	
+	</div>
+	
+	
+  </div>
+  
+   <hr/>
+					  
+					  		    <h5 class="opacity" id = "h5-animacoes"><b> ANIMAÇÕES DA CINEMÁTICA </b></h5>
+		  
+		   <div class="w3-hide-large" ></div>
+		   
+		     <div class="w3-row">
+    <div class="w3-third">
+	
+	<div class="container">
+<img src="trabalhos/imagens/movimento-uniforme-02.jpg" style="width:100%" onclick="onClick(this)" alt="O Movimento Uniforme!" class="image">	  	   
+	  
+	  
+	   <div class="desc">  O Movimento Uniforme. <br/>
+	   Animação
+	    <div class="middle">
+    <div class="text"> <a href = "trabalhos/trabalho-10.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	   <div class="container">
+ <img src="trabalhos/imagens/lancamento-obliquo.jpg" style="width:100%" onclick="onClick(this)" alt="O Movimento Obliquo!" class="image">	  
+	  	 
+	  
+      <div class="desc">  O Movimento Obliquo. <br/>
+	   Animação
+	     <div class="middle02">
+    <div class="text02"> <a href ="trabalhos/trabalho-13.html"target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+
+	   <br/>
+	   </div>
+
+    <div class="w3-third">
+	<div class="container">
+ <img src= "trabalhos/imagens/movimento-uniformemente-variado-02.jpg" style="width:100%" onclick="onClick(this)" alt="O Movimento Uniformemente Variado!" class="image">	  
+       	
+		
+	   
+	  <div class="desc">  O Movimento Uniformemente Variado. <br/>
+	   Animação
+	   <div class="middle04">
+    <div class="text04"> <a href = "trabalhos/trabalho-11.html"  target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	  <div class="container">
+ <img src="trabalhos/imagens/circular.jpg" style="width:100%" onclick="onClick(this)" alt="O Movimento Circular!" class="image">	  
+       
+	   	  	 
+	    <div class="desc">  O Movimento Circular. <br/>
+	   Animação
+	     <div class="middle05">
+  <div class="text05"> <a href = "trabalhos/trabalho-14.html"  target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+
+	<br/>
+	 
+	   
+    </div>
+	
+	
+    <div class="w3-third">
+	
+	<div class="container">
+ <img src="trabalhos/imagens/lanc-vertical.png" style="width:100%" onclick="onClick(this)" alt="O Movimento Vertical!" class="image">	  
+    	
+		
+		
+		<div class="desc">  O Movimento Vertical. <br/>
+	   Animação
+		<div class="middle07">
+    <div class="text07"> <a href = "trabalhos/trabalho-12.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+		</div>
+</div>
+<br/>
+	
+
+	
+	
+	
+	</div>
+	
+	
+  </div>
+  
+    <hr/>
+					  
+					  		 
+		  
+		   <div class="w3-hide-large" ></div>
+  
+   
+		  
+		  		  <h5 class="opacity" id = "h5-tamplates"><b> Tamplates </b></h5>
+ 
+ <!-- !PAGE CONTENT! -->
+ <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" >
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" ></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+	
+	<div class="container">
+      <img src="imagens/tamplate_band.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature" class="image">
+	   
+	  
+	  
+	   <div class="desc"> Tamplate de Banda.
+	    <div class="middle">
+    <div class="text"> <a href = "tamplates/tamplate_band.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	   <div class="container">
+      <img src="imagens/tamplate_lojaVirtual.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset" class="image">
+	  
+	  	 
+	  
+       <div class="desc"> Loja Virtual - E-Commerce
+	     <div class="middle02">
+    <div class="text02"> <a href = "tamplates/tamplate_lojaRoupas.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	  <div class="container">
+	  <img src="imagens/tamplate_fotoPortfolio.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful" class="image">
+	  	
+		
+	 <div class="desc"> Portfolio de Fotos
+	 <div class="middle03">
+ <div class="text03"> <a href = "tamplates/tamplate_fotoPortfolio.html" target = "_blank"> Confira o site </a> </div>
+  </div>     
+	    
+	 </div>
+	</div>
+	   <br/>
+	   
+	     
+	   
+	   <div class="container">
+      <img src="imagens/tamplate_darkFoto.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset" class="image">
+	  
+	  	 
+	  
+       <div class="desc"> Tamplate Dark de Fotos
+	     <div class="middle02">
+    <div class="text02"> <a href = "tamplates/tamplate_darkFotos.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	</div>
+
+    <div class="w3-third">
+	<div class="container">
+      <img src="imagens/tamplate_parallax.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful" class="image">
+       	
+		
+	   
+	   <div class="desc"> Tamplate Parallax
+	   <div class="middle04">
+    <div class="text04"> <a href = "tamplates/tamplate_parallax.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	  <div class="container">
+	  <img src="imagens/tamplate_cv.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert" class="image">
+       
+	   	  	 
+	   <div class="desc"> Tamplate de Currículo Online
+	     <div class="middle05">
+  <div class="text05"> <a href = "tamplates/curriculo.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	  <div class="container">
+	  <img src="imagens/tamplate_portfolio.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!" class="image">
+     	
+		
+	 
+	 <div class="desc"> Tamplate de Portfólio
+	 <div class="middle06">
+    <div class="text06"> <a href = "tamplates/tamplate_naturePortfolio.html" target = "_blank"> Confira o site </a>
+	</div>
+  </div>
+	 </div>
+	</div>
+	<br/>
+	  
+	   <div class="container">
+      <img src="imagens/tamplate_modal.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset" class="image">
+	  
+	  	 
+	  
+       <div class="desc"> Tamplate Modal
+	     <div class="middle02">
+    <div class="text02"> <a href = "tamplates/tamplate_modal.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+    </div>
+	
+	
+    <div class="w3-third">
+	
+	<div class="container">
+      <img src="imagens/tamplate_blog.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again" class="image">
+    	
+		
+		
+		<div class="desc"> Tamplate de Blog
+		<div class="middle07">
+    <div class="text07"> <a href = "tamplates/tamplate_blog.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+		</div>
+</div>
+<br/>
+	
+	<div class="container">
+	  <img src="imagens/tamplate_fotos.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing" class="image">
+	
+	
+
+	<div class="desc"> Tamplate de Fotos
+	<div class="middle08">
+    <div class="text08"> <a href = "tamplates/tamplate_fotos.html" target = "_blank"> Confira o site </a> </div>
+  </div>    
+	</div>
+	  </div>
+	  <br/>
+	  
+	  <div class="container">
+	  <img src="imagens/tamplate_pesquisador.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!" class="image">
+	
+	
+
+	<div class="desc"> Tamplate de Pesquisador
+	<div class="middle09">
+    <div class="text08"> <a href = "tamplates/carrossel-03.html" target = "_blank"> Confira o site </a> </div>
+  </div>    
+	</div>
+	</div>
+	<br/>
+	
+	  
+	   <div class="container">
+      <img src="imagens/tamplate_art.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset" class="image">
+	  
+	  	 
+	  
+       <div class="desc"> Tamplate Art
+	     <div class="middle02">
+    <div class="text02"> <a href = "tamplates/tamplate_art.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	
+	</div>
+	
+	
+  </div>
+  
+   <hr/>
+
+  		  		  <h5 class="opacity" id = "h5-meuTrabalho"><b> Modelo de Web Site </b></h5>
+
+ <div class="w3-row">
+    <div class="w3-third-02">
+	
+	<div class="container">
+      <img src="imagens/tamplate_webpage.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature" class="image">
+	   
+	  
+	  
+	   <div class="desc"> Modelo de Web Site.
+	    <div class="middle">
+    <div class="text"> <a href = "tamplates/tamplate_webPage.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	</div>
+	</div>
+	
+	 <hr/>
+
+  		  		  <h5 class="opacity" id = "h5-demos"><b> Demos </b></h5>
+
+ <div class="w3-row">
+ 
+      <div class="w3-third">
+	
+	<div class="container">
+      <img src="imagens/demo_fotos-01.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature" class="image">
+	   
+	  
+	  
+	   <div class="desc"> Demo de Fotos I.
+	    <div class="middle">
+    <div class="text"> <a href = "demos/demos_fotos-01.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	   <div class="container">
+      <img src="imagens/demo_modalLogin.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset" class="image">
+	  
+	  	 
+	  
+       <div class="desc"> Demo de Login Modal
+	     <div class="middle02">
+    <div class="text02"> <a href = "demos/demos_modalLogin.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	
+	   <br/>
+	   
+	     
+	   
+	  
+	</div>
+	
+	  <div class="w3-third">
+	
+	<div class="container">
+      <img src="imagens/demo_fotos-02.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature" class="image">
+	   
+	  
+	  
+	   <div class="desc"> Demo de Fotos II
+	    <div class="middle">
+    <div class="text"> <a href = "demos/demos_fotos-02.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	   <div class="container">
+      <img src="imagens/demo_login.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset" class="image">
+	  
+	  	 
+	  
+       <div class="desc"> Demo de Login
+	     <div class="middle02">
+    <div class="text02"> <a href = "demos/demos_login.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	
+	</div>
+	
+	  <div class="w3-third">
+	
+	<div class="container">
+      <img src="imagens/demo_magazine.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature" class="image">
+	   
+	  
+	  
+	   <div class="desc"> Demo de Magazine.
+	    <div class="middle">
+    <div class="text"> <a href = "demos/demos_noticias.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	   <div class="container">
+      <img src="imagens/demo_formIcons.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset" class="image">
+	  
+	  	 
+	  
+       <div class="desc"> Demo de Form Icons
+	     <div class="middle02">
+    <div class="text02"> <a href = "demos/demos_formIcons.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	
+	</div>
+	
+	</div>
+
+ <hr/>
+
+  		  		  <h5 class="opacity" id = "h5-meuTrabalho"><b> Carrossel - Bootstrap </b></h5>
+
+ <div class="w3-row">
+    <div class="w3-third-02">
+	
+	<div class="container">
+      <img src="imagens/carrossel_imagem.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature" class="image">
+	   
+	  
+	  
+	   <div class="desc"> Carrossel - Bootstrap 
+	    <div class="middle">
+    <div class="text"> <a href = "carrossel/carrossel.html" target = "_blank"> Confira o site </a> </div>
+  </div>
+	   </div>
+	   </div>
+	   <br/>
+	   
+	</div>
+	</div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+ 
+		  
+
+
+</div>
+         
+        </div>
+		
+		 </div>
+
+<footer class="container teal center">
+  <p>Samuel Delmonte - Desenvolvedor Web</p>
+   <p> scdelmonte@hotmail.com</p>
+</footer>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop1 > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+
+$(document).ready(function() {
+$("#btnSobre").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#body").offset().top
+     }, 3000);
+ });
+});
+
+
+$(document).ready(function() {
+$("#btnServicos").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#h4-servicos").offset().top
+     }, 1000);
+ });
+});
+
+$(document).ready(function() {
+$("#btnEducacao").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#h2-educacao").offset().top
+     }, 3000);
+ });
+});
+
+$(document).ready(function() {
+$("#btnportfolio").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#h4-portfolio").offset().top
+     }, 3000);
+ });
+});
+
+$(document).ready(function() {
+$("#btnContato").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#h4-contato").offset().top
+     }, 3000);
+ });
+});
+
+$(document).ready(function() {
+$("#btnmeutrabalho").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#h5-meuTrabalho").offset().top
+     }, 3000);
+ });
+});
+
+$(document).ready(function() {
+$("#btnanimacoes").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#h5-animacoes").offset().top
+     }, 3000);
+ });
+});
+
+$(document).ready(function() {
+$("#btnportfolios").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#h5-portfolios").offset().top
+     }, 3000);
+ });
+});
+
+$(document).ready(function() {
+$("#btncinematica").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#h5-cinematica").offset().top
+     }, 3000);
+ });
+});
+
+$(document).ready(function() {
+$("#btntamplates").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#h5-tamplates").offset().top
+     }, 3000);
+ });
+});
+
+$(document).ready(function() {
+$("#btndemos").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#h5-demos").offset().top
+     }, 3000);
+ });
+});
+
+
+
+
+</script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+</body>
+</html>
