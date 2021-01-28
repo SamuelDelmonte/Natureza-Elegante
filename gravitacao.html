@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+   <head>
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/menu.css" type="text/css" />
+ <link rel="stylesheet" href="css/estilo-01.css" type="text/css" />
+<link rel="stylesheet" href="css/footer.css" type="text/css" />
+ <link rel="stylesheet" href="css/gravitacao.css" type="text/css" />
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+  <title>GRAVITAÇÃO</title>
+<style>
+</style>
+   </head>
+
+   <body>
+     <div id="cabecalho">
+     <a href="http://naturezaelegante.com" id="titulo"><h1>ENSINANDO A FÍSICA - SAMUEL DELMONTE</h1></a>
+    <h2>Simulador do Movimento dos Corpos</h2>   
+
+<div id="menu">
+<a href="http://naturezaelegante.com">HOME</a>
+<a href="chat.html" target = "_blank">CONTATO</a>
+<div class="dropdown">
+<a href="#" class="dropbtn">SIMULADOR</a>
+<div class="dropdown-content">
+<a href="viagemtempo01.html">viagens no tempo</a>
+<a href="calculadora-complexa.html">calculadora</a>
+</div>
+</div>
+<div class="dropdown">
+<a href="#" class="dropbtn">ARTIGOS</a>
+<div class="dropdown-content">
+<a href="relatividade01.html">Relatividade 01</a>
+<a href="viagemtempo03.php">Relatividade 02</a>
+<a href="#">Modelo Padrao</a>
+</div>
+</div>
+<a href="portfolio.html" target = "_blank">PORTFOLIO</a>
+<a href="videoaulas.html">VIDEO AULAS</a>
+
+</div>
+     </div>
+<hr/>   
+<br/>  
+<div id = "principal">
+
+
+<section id = "gravitacao">
+    
+<h2>GRAVITAÇÃO</h2>
+
+<nav>
+<ul>
+<li> As Leis de Kepler <br/> <button class="btn1">mais info</button>
+			<button class="btn2">menos info</button> 
+			
+			<div class = "tabela" id ="tabela01">
+<h3 class = "par-03"> Primeira Lei de Kepler - Lei das órbitas:</h3>
+<p id = "paragrafo"> Depois que o polonês Nicolau Copérnico (1473 - 1543) propôs o sistema heliocêntrico
+  (o Sol no centro), o alemão Johannes Kepler (1571 - 1630) formulou três leis a respeito do movimento
+dos planetas, cujas órbitas são elípcas.
+</p>
+
+<div id = "gravitacao">
+<span id = "span-01">
+<b> Primeira Lei de Kepler:</b> <br/>
+Os planetas descrevem órbitas elípticas ao redor do Sol, que por sua vez ocupa um dos focos
+da elípse.
+O ponto A da trajetória mais afastado do Sol é o afélio, e o ponto B, mais próximo, é o periélio.
+<br/> 
+
+</span>
+
+<span id = "span-02">
+ <canvas id="myCanvas-09" width="600" height="320" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+</div>
+
+ </h3>
+ <br/>
+<h3 class = "par-03"> Segunda Lei de Kepler - Lei das áreas: </h3>	
+
+<p id = "paragrafo"> Kepler descobriu que o segmento que une o Sol ao planeta em questão varre áreas
+  iguais e proporcionais aos tempos decorridos quando se percorre o trecho da órbita correspondente.
+ </p>
+
+<div id = "gravitacao-02">
+<span id = "span-01">
+<b> Segunda lei de Kepler: </b>
+<br/>
+Matematicamente temos: <b> A1 / ∆t1 = A2 / ∆t2 = constante ;  ∆t1 = ∆t2 </b>
+<br/>
+
+</span>
+
+<span id = "span-03">
+<canvas id="myCanvas-10" width="600" height="320" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+
+</div>
+
+<br/>
+<br/>
+
+<h3 class = "par-03"> Terceira Lei de Kepler - Lei dos períodos: </h3>
+
+<p id = "paragrafo">
+O quociente dos quadrados dos períodos e o cubo de suas distâncias médias do Sol é 
+igual a uma constante K.
+</p>
+ 
+<div id = "gravitacao-03">
+<span id = "span-01">
+<b> Terceira lei de Kepler: </b>
+<br/>
+<br/>
+Matematicamente temos: 
+<br/>
+<br/>
+
+<b> <sub> t </sub> 2 . <sub> a </sub>3 <sub> = k </sub> </b>
+
+<br/>
+<br/>
+onde:
+<br/>
+<br/>
+
+k: constante de proporcionalidade;
+<br/>
+a: semieixo maior da órbita.
+</span>
+
+<span id = "span-04">
+
+  <canvas id="myCanvas-11" width="470" height="320" >
+    Your browser does not support the HTML5 canvas tag.</canvas>
+    </span>
+</div>
+<br/><br/>
+
+<h3 class = "par-03"> Simulador das leis de Kepler </h3>	
+
+<p id = "paragrafo">
+Para determinar o período dum astro: 
+</p>
+
+<div id = "gravitacao-04">
+<span id = "span-01">
+Dada a equação da terceira lei de Kepler: <b> <sub> T </sub> 2 . <sub> a </sub>3 <sub> = k </sub> </b>, 
+onde <b>T</b> é o tempo necessário para um planeta completar uma volta em torno do sol, e sendo <b>a </b>
+a média entre a menor e a maior distância do planeta ao sol, e, sabendo que, no caso da Terra, o <b> a </b> médio é 
+at <sub> = 1,5.</sub>  <sub>10 </sub> 8 <sub> km</sub> , enquanto que o planeta P, que também possui um
+movimento de translação ao redor do Sol, tem seu período Tp. Determinar, portanto o<a> ap </a>médio do 
+planeta P em kilometros:  
+<br/><br/>
+
+        <label>Tp - período (anos):</label>
+		 <br/>
+        <input type="text" id="txtKeplerTp"/>
+        <br/>
+	
+		<button id="btnEnviar" onclick = "gravar()" >Enviar</button>
+  <button id="btnLimpar" onclick = "limpar()" >Limpar</button>
+  
+     
+    
+</span>
+
+<span id = "span-06">
+Resultado:
+<div id="divResultado-01">
+ 
+ <p id = "resp-01">
+   </p>
+  <div id ="container-01">
+    
+<div id ="animate-01">
+  <div id="myDIV">
+
+      <div id ="animate-02">
+          <div id="myDIV-02">
+          </div>
+        
+          </div>
+    
+  </div>
+  
+
+</div>
+
+<canvas id="myCanvas-12" width="400" height="330" style="border:2px solid red;" >
+  Your browser does not support the HTML5 canvas tag.</canvas>
+
+</div>
+
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+</div> 
+			
+			</li>
+			
+<li>A Gravitação Universal <br/> <button class="btn3">mais info</button>
+			<button class="btn4">menos info</button> 
+			<div class = "tabela" id ="tabela02">
+			
+<h3 class = "par-03"> A Gravitação Universal de Newton. </h3>	
+<p id = "paragrafo">
+Dois corpos se atraem reciprocamente com um força proporcional ao produto de suas massas e inversamente proporcional
+ao quadrado da distância entre ambos. </p>
+
+<div id = "gravitacao-05">
+<span id = "span-01">
+De acordo com a lei da gravitação universal de Newton:
+<br/>
+<b> F = G . M.m / d² </b>
+<br/> 
+onde,
+<br/><br/>
+<b> F:</b> Força de atração gravitacional;
+<br/>
+ <b> G: </b> Constante de gravitação universal, sendo esta igual a: 
+ <b> <sub> G = 6,67 . </sub> <sub> 10</sub>-11 <sub> N.m²/kg² </sub></b>  
+<br/> 
+<b>M e m: </b> Massa dos corpos;
+<br/> 
+<b>d:</b> Distância entre os centros de gravidade dos corpos.
+<br/>
+ 
+</span>
+
+<span id = "span-05">
+<canvas id="myCanvas-13" width="390" height="290" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+
+</div>
+<br/>
+
+<h3 class = "par-03"> A Força Centrípeta. </h3>	
+<p id = "paragrafo">
+A força centrípeta é diretamente proporcional ao produto da massa pela aceleração centrípeta, sendo esta
+última responsável por alterar a direção e o sentido da velocidade no caso do mvimento circular. Sua direção é 
+radial com sentido apontando para o centro do movimento. </p>
+
+<div id = "gravitacao-06">
+<span id = "span-01">
+De acordo com as leis que regem o movimento circular:
+<br/>
+<b> (1) ac = w².r </b>
+<br/>
+<b> (2) v = w.r </b>  ou <b>  w = v/r </b> 
+
+<br/> 
+onde,
+<br/>
+<b> ac:</b> Aceleração centrípeta;
+<br/>
+ <b> w: </b> Velocidade angular 
+<br/> 
+<b> r: </b> Raio da circunferência;
+<br/> 
+ Combinando as equações (1) e (2), obtemos:
+<br/>
+ac = (v/r)².r  
+<br/>
+logo,  ac = v²/r
+<br/>
+Portanto a  força centrípeta é igual a: <b> Fc = m.v²/r </b> 
+
+</span>
+
+<span id = "span-05">
+<canvas id="myCanvas-14" width="390" height="290" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+
+</div>
+<br/>
+
+<h3 class = "par-03"> Simulador da gravitação universal de Newton </h3>	
+
+<p id = "paragrafo">
+Para determinar a velocidade tangencial dum satélite (de massa m) que orbita um planeta P (de massa M) : 
+</p>
+
+<div id = "gravitacao-07">
+<span id = "span-01">
+Dada as equações da gravitação universal de Newton, e a da força centrípeta, respectivamente:<br/><br/>
+<b>  F = G . M.m / d² </b>
+<br/>
+<b> Fc = m.v²/r </b>  
+<br/>
+<b> <sub> G = 6,67 . </sub> <sub> 10</sub>-11 <sub> N.m²/kg² </sub></b>  
+<br/><br/>
+
+Determinar a velocidade tangencial dum satélite que orbita um planeta P
+<br/><br/>
+        <label>Massa (M) do planeta (P) (toneladas):</label>
+		 <br/>
+        <input type="text" id="txtNewtonM"/>
+        <br/>
+		<label> Distância (d) entre ambos (Km):</label>
+		 <br/>
+        <input type="text" id="txtNewtonD"/>
+		<br/>
+		<button id="btnEnviar-02" onclick = "gravar02()" >Enviar</button>
+  <button id="btnLimpar-02" onclick = "limpar02()" >Limpar</button>
+  
+     
+   
+</span>
+
+<span id = "span-06">
+Resultado:
+<div id="divResultado-02">
+ 
+ <p id = "resp-03">
+   </p>
+  <div id ="container-02">
+  
+<div id ="animate-03">
+
+  <div id="myDIV-03">
+  </div>
+</div>
+
+<canvas id="myCanvas-15" width="400" height="330" style="border:2px solid red;" >
+  Your browser does not support the HTML5 canvas tag.</canvas>
+  
+</div>
+
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+</div> 
+			
+			</li>
+			
+
+<br/>
+
+</ul>
+
+</nav>
+   
+</section>
+ </div>
+ 
+ <hr id = "rodape" />
+ 
+ <footer>
+<h1 id = "rodape"> Samuel Delmonte</h1>
+
+ </footer>
+
+				
+				
+				 <script src="js/gravitacao.js"></script>
+ </body>
+ </html>
+ 
+ 
