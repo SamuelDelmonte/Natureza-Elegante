@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+   <head>
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/menu.css" type="text/css" />
+ <link rel="stylesheet" href="css/estilo-01.css" type="text/css" />
+<link rel="stylesheet" href="css/footer.css" type="text/css" />
+ <link rel="stylesheet" href="css/momento.css" type="text/css" />
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+  <title>MOMENTO</title>
+<style>
+</style>
+   </head>
+
+   <body>
+     <div id="cabecalho">
+     <a href="http://naturezaelegante.com" id="titulo"><h1>ENSINANDO A FÍSICA - SAMUEL DELMONTE</h1></a>
+    <h2>Simulador do Movimento dos Corpos</h2>   
+
+<div id="menu">
+<a href="http://naturezaelegante.com">HOME</a>
+<a href="chat.html" target = "_blank">CONTATO</a>
+<div class="dropdown">
+<a href="#" class="dropbtn">SIMULADOR</a>
+<div class="dropdown-content">
+<a href="viagemtempo01.html">viagens no tempo</a>
+<a href="calculadora-complexa.html">calculadora</a>
+</div>
+</div>
+<div class="dropdown">
+<a href="#" class="dropbtn">ARTIGOS</a>
+<div class="dropdown-content">
+<a href="relatividade01.html">Relatividade 01</a>
+<a href="viagemtempo03.php">Relatividade 02</a>
+<a href="#">Modelo Padrao</a>
+</div>
+</div>
+<a href="portfolio.html" target = "_blank">PORTFOLIO</a>
+<a href="videoaulas.html">VIDEO AULAS</a>
+
+</div>
+     </div>
+<hr/>   
+<br/>  
+<div id = "principal">
+
+
+<section id = "momento">
+    
+<h2>MOMENTO</h2>
+
+<nav>
+<ul>
+<li> Quantidade de movimento (Q) <br/> <button class="btn1">mais info</button>
+			<button class="btn2">menos info</button> 
+			
+			<div class = "tabela" id ="tabela01">
+<h3 class = "par-03"> Quantidade de movimento:</h3>
+<p id = "paragrafo"> A quantidade de movimento é uma grandeza vetorial determinada pela massa do corpo multiplicada pelo seu vetor velocidade: 
+Como a massa é uma grandeza escalar, o vetor quantidade de movimento será paralelo ao vetor velocidade, tendo a mesma direção e sentido.
+</p>
+
+<div id = "momento">
+<span id = "span-01">
+<b> Quantidade de movimento (Q):</b>
+<br/>
+<br/>
+A fim de expressar esse fenômeno matematicamente, define-se uma nova grandeza: a quantidade de movimento, também conhecida como quantidade
+ de movimento linear, momento linear, momentum, ou ainda, momentum linear.
+<br/>
+<br/>
+Essa grandeza foi definida por Isaac Newton no livro Principia Mathematica. Uma forma de expressá-la é:
+<br/> 
+<br/> 
+<b> Q = m.v </b>
+<br/>
+<br/>
+onde,
+<br/>
+<b> -Q </b> refere-se ao vetor quantidade de movimento.
+<br/>
+<b> -m </b> refere-se à massa.
+<br/>
+<b> -v </b> refere-se ao vetor velocidade, que determina a direção e o sentido de Q .
+<br/>
+<br/>
+A unidade adotada pelo SI para a quantidade de movimento é o <b> kg.m/s (quilograma. metro por segundo)</b>. 
+Tal unidade é equivalente ao <b> N.s (newton.segundo)</b>.
+<br/>
+
+</span>
+
+<span id = "span-02">
+ <canvas id="myCanvas-09" width="390" height="290" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+</div>
+
+ <br/><br/>
+
+<h3 class = "par-03"> Simulador da quantidade de movimento </h3>	
+
+<p id = "paragrafo">
+Para determinar a relação das massas: 
+</p>
+
+<div id = "momento-02">
+<span id = "span-01">
+Uma pessoa que observa dois carros em movimento, na mesma direção, afirma: "Os dois carros têm a mesma quantidade de movimento". 
+Sabendo que a velocidade de uma deles é v1 e do outro é v2, qual a relação das massas dos dois carros?
+<br/><br/>
+
+        <label>Velocidade 01 (km/h):</label>
+		 <br/>
+        <input type="text" id="txtMomentoV01"/>
+        <br/>
+		
+		<label>Velocidade 02 (km/h):</label>
+		 <br/>
+        <input type="text" id="txtMomentoV02"/>
+        <br/>
+	
+		<button id="btnEnviar" onclick = "gravar()" >Enviar</button>
+  <button id="btnLimpar" onclick = "limpar()" >Limpar</button>
+  
+     
+    
+</span>
+
+<span id = "span-06">
+Resultado:
+<div id="divResultado-01">
+ 
+ <p id = "resp-01">
+   </p>
+  <div id ="container-01">
+    
+<div id ="animate-01">
+
+ <span> M1 </span>
+
+</div>
+
+<div id ="animate-02">
+
+ <span> M2 </span>
+
+</div>
+
+
+<canvas id="myCanvas-12" width="400" height="330" style="border:2px solid red;" >
+  Your browser does not support the HTML5 canvas tag.</canvas>
+
+</div>
+
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+<h3 class = "par-03"> Choques Mecânicos:</h3>
+<p id = "paragrafo">O estudo das colisões é um caso particular da conservação da quantidade de movimento.
+ Nele considera-se que a massa dos objetos envolvidos na colisão não se altera, ocorrendo apenas variação na velocidade..
+</p>
+
+<div id = "momento-03">
+<span id = "span-01">
+<b> Choques mecânicos:</b>
+<br/>
+<br/>
+Quando analisado vetorialmente, o estudo de colisões fornece a previsão teórica de qualquer movimento tridimensional, 
+já que a velocidade final é calculada com informações sobre sua intensidade e orientação.
+<br/>
+<br/>
+As colisões dividem-se em três casos:
+<br/>
+<br/>
+<b> Colisões perfeitamente elásticas:</b> a energia cinética é integralmente conservada e os corpos ficam separados após a colisão.
+<br/>
+<b> Colisões perfeitamente inelásticas:</b> a energia cinética é parcialmente conservada e os corpos ficam unidos após a colisão.
+<br/>
+<b> Colisões parcialmente elásticas:</b> é um caso intermediário em que há perda de energia cinética e os corpos ficam separados após a colisão.
+<br/>
+<br/>
+A conservação da quantidade de movimento pode ser definida dessa forma:
+<br/> 
+<br/> 
+<b> Q (inicial) = Q (final) </b>
+
+<br/>
+
+</span>
+
+<span id = "span-01">
+Considerando um choque totalmente elástico, temos:
+<br/>
+<br/>
+<b> Q (inicial) = Q (final) </b>
+<br/>
+<b> m1.v1i + m2.v2i = m1.v1f + m2.v2f </b>
+<br/>
+<br/>
+ <canvas id="myCanvas-10" width="390" height="290" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+</div>
+<br/>
+
+<h3 class = "par-03"> Simulador de choques mecânicos </h3>	
+
+<p id = "paragrafo">
+Para determinar a velocidade final: 
+</p>
+<div id = "momento-04">
+<span id = "span-01">
+Em um jogo de bilhar, a bola vermelha atinge outra bola exatamente em seu centro, com velocidade v1i. 
+Qual deve ser a velocidade final da outra bola, sabendo-se que a bola vermelha segue o movimento com velocidade 1 m/s na mesma direção? 
+Considere a colisão perfeitamente elástica, as massas das bolas iguais e a velocidade inicial da outra bola como v2i, de mesma direção e 
+sentido oposto à bola vermelha.
+
+ 
+<br/><br/>
+
+        <label>Velocidade 01 (v1i)(m/s):</label>
+		 <br/>
+        <input type="text" id="txtMomento04V01"/>
+        <br/>
+		
+		<label>Velocidade 02 (v2i)(m/s):</label>
+		 <br/>
+        <input type="text" id="txtMomento04V02"/>
+        <br/>
+	
+		<button id="btnEnviar-02" onclick = "gravar02()" >Enviar</button>
+  <button id="btnLimpar-02" onclick = "limpar02()" >Limpar</button>
+  
+     
+    
+</span>
+
+<span id = "span-06">
+Resultado:
+<div id="divResultado-02">
+
+ <p id = "resp-03">
+   </p>
+  <div id ="container-02">
+    
+<p> Como:  Q1 = Q2 = <br>
+ m1v1i + m2v1f = m1v1f + m2v2f <br>
+ Sendo m1 = m2; <br>
+ v1i + v2i = v1f + v2f <br>
+ v2f = v1i + v2i - v1f
+ 
+ </p>
+          <div id = "div">
+		  <div id = "div-02"> </div>
+<div id = "div-03"> </div>
+         </div>
+        
+          
+    
+
+
+
+
+
+</div>
+
+	</div>
+	
+</span>
+
+</div>
+<br/>
+
+</div> 
+			
+			</li>
+			
+<li> Impulso <br/> <button class="btn3">mais info</button>
+			<button class="btn4">menos info</button> 
+			<div class = "tabela" id ="tabela02">
+			
+			<h3 class = "par-03"> Impulso de uma força:</h3>
+<p id = "paragrafo">Durante os estudos anteriores, tratamos apenas da força aplicada, sem que nos preocupássemos com o 
+tempo de aplicação de tal força. É fácil perceber, entretanto, que uma força de mesma intensidade e mesma orientação 
+terá resultados que variam conforme o tempo de duração da aplicação.
+A fim de estudar essa interação entre a força aplicada e o tempo de aplicação, define-se uma nova grandeza chamada impulso.
+</p>
+
+<div id = "momento">
+<span id = "span-01">
+<b> Impulso:</b>
+<br/>
+<br/>
+Essa grandeza vetorial é definida, para uma força constante no tempo, como o produto da força aplicada pelo 
+intervalo de tempo de aplicação, ou seja:
+<br/> 
+<br/> 
+<b> I = F . ∆t </b>
+<br/>
+<br/>
+Analisando essa expressão, verifica-se que:
+<br/>
+O módulo do vetor impulso é dado pelo produto do módulo da força com o intervalo de tempo de sua aplicação.
+<br/>
+A direção e o sentido do vetor impulso são os mesmos do vetor força.
+<br/>
+A unidade de medida de impulso adotada pelo SI é o <b>N.s</b>, a qual pode ser reescrita como <b>kg.m/s</b>.
+ 
+
+<br/>
+<br/>
+
+
+</span>
+
+<span id = "span-02">
+ <canvas id="myCanvas-09" width="390" height="290" style="border:2px solid red;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</span>
+</div>
+
+ <br/><br/>
+			
+
+			</div>
+			
+			</li>
+			
+
+<br/>
+
+</ul>
+
+</nav>
+   
+</section>
+ </div>
+ 
+ <hr id = "rodape" />
+ 
+ <footer>
+<h1 id = "rodape"> Samuel Delmonte</h1>
+
+ </footer>
+
+				
+				
+				 <script src="js/momento.js"></script>
+ </body>
+ </html>
+ 
+ 
