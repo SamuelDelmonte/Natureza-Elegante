@@ -1,2 +1,1 @@
-# Natureza-Elegante
-Ensinando a Física - Samuel Delmonte
+# Natureza-Elegante Ensinando a Fisica
